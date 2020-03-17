@@ -460,6 +460,10 @@ section {
   margin: 20px 0;
 }
 
+.contacts__iteams__block__elements a {
+  text-decoration: none;
+}
+
 .contacts__iteams__block__elements i {
   color: #D63447;
   font-size: 35px;
