@@ -152,20 +152,20 @@ header {
 
 .about-me__text h1 {
   color: #f0f0f0;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
 
 .about-me__text p {
-  font-size: 15px; 
+  font-size: 18px; 
   color: #f0f0f0;
   font-family: 'Roboto', sans-serif;
 }
 
 .about-me__text span {
-  font-size: 15px; 
+  font-size: 18px; 
   color: #f0f0f0;
   font-family: 'Roboto', sans-serif;
 }
@@ -283,7 +283,7 @@ header {
 }
 .skills__circle__block p {
   color: #f0f0f0;
-  font-size: 15px;
+  font-size: 18px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -308,7 +308,7 @@ header {
   display: flex;
   justify-content: center;
   color: #0C0D0E;
-  font-size: 13px;
+  font-size: 12px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -316,7 +316,7 @@ header {
   display: flex;
   justify-content: center;
   color: #f0f0f0;
-  font-size: 15px;
+  font-size: 12px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -381,7 +381,7 @@ header {
 }
 
 .certification__item p {
-  font-size: 15px;
+  font-size: 18px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -400,6 +400,7 @@ header {
 .works h4 {
   margin: 5% 0;
   color: #f0f0f0;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
 }
@@ -443,6 +444,7 @@ header {
 .contacts h4 {
   margin: 6% 0;
   color: #f0f0f0;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
 }
@@ -493,7 +495,7 @@ header {
 
 .contacts__iteams__block__elements__text p {
   color: #D63447;
-  font-size: 15px;
+  font-size: 18px;
   font-family: 'Roboto', sans-serif;
 }
 
