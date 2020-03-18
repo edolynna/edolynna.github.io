@@ -16,6 +16,10 @@ header {
   background-size: cover;
 }
 
+header a {
+  margin: 0 auto;
+}
+
 .wrrapper-header-content{
   display: flex;
   flex-direction: column;
@@ -33,6 +37,66 @@ header {
 .logo {
   width: 100%;
   height: 100%;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-block {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-nav {
+  transition: 0.5s;
+  transform-origin: right center;
+  transform: scaleX(0) translateX(20%);
+  opacity: 0;
+}
+
+.menu-nav__active {
+  display: flex;
+  align-items: center;
+  transform: scaleX(1) translateX(0%);
+  opacity: 1;
+}
+
+.menu-nav__link {
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #D63447;
+  font-size: 18px;
+  font-family: 'Noto Serif', serif;
+}
+
+.menu-button {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.menu-bento {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.wrraper-dot {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dot {
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #D63447;
+  border-radius: 10px;
+  margin: 3px;
 }
 
 .header-text {
@@ -85,11 +149,22 @@ header {
   font-size: 30px;
 }
 
+.icon-telegram:hover {
+  color: #D63447;
+}
+
+.icon-gmail:hover {
+  color: #D63447;
+} 
+
+.icon-instagram:hover {
+  color: #D63447;
+}
+
 .arrow-down {
   width: 33px;
   height: 33px;
   margin: 0 auto;
-
 }
 
 
@@ -435,6 +510,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: space-around; */
   border: 5px solid #D63447;
   margin: 3%;
   height: 90%;
@@ -442,12 +518,19 @@ header {
 }
 
 .contacts h4 {
-  margin: 6% 0;
+  margin-top: 5%;
   color: #f0f0f0;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
 }
+
+.contacts p {
+  color: #f0f0f0;
+  font-size: 12px; 
+  font-family: 'Noto Serif', serif;
+}
+
 
 .contacts__iteams {
   display: flex;

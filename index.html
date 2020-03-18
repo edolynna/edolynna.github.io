@@ -8,17 +8,52 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="fontello.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:700|Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>Elvira Dolynna</title>
 </head>
 <body>
-  <header>
+  <header id="yak1">
     <div class="wrrapper-header-content">
       <div class="wrapper-menu">
         <div class="logo">
           <img src="icon/e.png">
         </div>
         <div class="menu">
-          XXX
+            <div class="menu-block">
+                <nav class="menu-nav">
+                  <a class="menu-nav__link" href="#yak1">Home</a>
+                  <a class="menu-nav__link" href="#yak2">About</a>
+                  <a class="menu-nav__link" href="#yak3">Skill</a>
+                  <a class="menu-nav__link" href="#yak4">Work</a>
+                  <a class="menu-nav__link" href="#yak5">Contact</a>
+                </nav>
+              </div>
+              <a href="#" class="menu-button">
+                <div class="menu-bento">
+                  <div class="wrraper-dot">
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                  </div>
+                  <div class="wrraper-dot">
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                  </div>
+                  <div class="wrraper-dot">
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                  </div>
+                  </div>
+                </a>
+            </div>
+            <script>
+              $('.menu-button').on('click', function(e){
+                e.preventDefault;
+                $('.menu-nav').toggleClass('menu-nav__active');
+              });
+            </script>
         </div>
       </div>
       <div class="header-text">
@@ -34,10 +69,10 @@
         </div>
       </div>
     </div>
-    <img class="arrow-down"src="icon/arrow.png" alt="">
+    <a href="#yak2"><img class="arrow-down"src="icon/arrow.png" alt=""></a>
   </header>
 
-  <section class="about">
+  <section class="about" id="yak2">
     <div class="about-me">
       <div class="wrraper-about-me">
         <div class="wrapper-about-me__photo">
@@ -75,7 +110,7 @@
     </div>
   </section>
 
-  <section class="skills">
+  <section class="skills" id="yak3">
     <div class="skill-ablitie">
       <h1>My skills and abilities</h1>
       <p>The only way to do great work is to love what you do.</p>
@@ -169,7 +204,7 @@
     </div>
   </section>
 
-  <section class="works">
+  <section class="works" id="yak4">
     <h4>Works</h4>
     <div class="works__items">
       <div id="square"></div>
@@ -178,9 +213,10 @@
     </div>
   </section>
 
-  <section class="contacts">
+  <section class="contacts" id="yak5">
     <div class="wrraper-contacts">
       <h4>Contacts</h4>
+      <p>You can click on the icon to contact me.</p>
       <div class="contacts__iteams">
         <div class="contacts__iteams__block">
           <div class="contacts__iteams__block__elements">
