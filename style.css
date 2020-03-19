@@ -2,6 +2,8 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1440px;
+  min-height: 800px;
 }
 
 
@@ -12,7 +14,7 @@ header {
   flex-direction: column;
   margin: 0;
   height: 100vh;
-  background: url(img/sung-jin-cho-ZsA3DknVxRc-unsplash.jpg) no-repeat center center fixed;
+  background: url(img/sung-jin-cho-ZsA3DknVxRc-unsplash.jpg) no-repeat center center;
   background-size: cover;
 }
 
