@@ -473,25 +473,72 @@ header a {
 }
 
 .works h4 {
-  margin: 5% 0;
+  margin: 4% 0;
   color: #f0f0f0;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
 }
 
-.works__items {
+.wrraper-work {
   display: flex;
-  justify-content: space-around;
   width: 100%;
-  align-items: center;
 }
 
-#square {
+.works__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.projects-name {
+  display: flex;
+}
+
+.projects-name h1 {
+  color: #f0f0f0;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+#square-1 {
   width: 300px;
   height: 450px;
-  background-color: #f0f0f0;
   border-radius: 80px;
+  margin: 5%;
+  background-image: url("../ED/img/ed.jpg");
+  overflow: hidden;
+  box-shadow: 4px 4px 4px rgba(240, 240, 240, 0.100);
+}
+
+#square-2 {
+  width: 300px;
+  height: 450px;
+  border-radius: 80px;
+  margin: 5%;
+  background-image: url("../ED/img/cactus.jpg");
+  overflow: hidden;
+  box-shadow: 4px 4px 4px rgba(240, 240, 240, 0.100);
+}
+
+#square-3 {
+  width: 300px;
+  height: 450px;
+  border-radius: 80px;
+  margin: 5%;
+  background-image: url("../ED/img/greenplanet.jpg");
+  overflow: hidden;
+  box-shadow: 4px 4px 4px rgba(240, 240, 240, 0.100);
+}
+
+.in-square {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background-color: rgba(214, 52, 71, 0.880);
 }
 
 
