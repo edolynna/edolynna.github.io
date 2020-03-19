@@ -509,7 +509,7 @@ header a {
   height: 450px;
   border-radius: 80px;
   margin: 5%;
-  background-image: url("../ED/img/ed.jpg");
+  background-image: url("img/ed.jpg");
   overflow: hidden;
   box-shadow: 4px 4px 4px rgba(240, 240, 240, 0.100);
 }
@@ -519,7 +519,7 @@ header a {
   height: 450px;
   border-radius: 80px;
   margin: 5%;
-  background-image: url("../ED/img/cactus.jpg");
+  background-image: url("img/cactus.jpg");
   overflow: hidden;
   box-shadow: 4px 4px 4px rgba(240, 240, 240, 0.100);
 }
@@ -529,7 +529,7 @@ header a {
   height: 450px;
   border-radius: 80px;
   margin: 5%;
-  background-image: url("../ED/img/greenplanet.jpg");
+  background-image: url("img/greenplanet.jpg");
   overflow: hidden;
   box-shadow: 4px 4px 4px rgba(240, 240, 240, 0.100);
 }
