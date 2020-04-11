@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewpos" href="style.css">
+  <meta name="viewpos" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161135981-1"></script>
@@ -13,8 +13,9 @@
 
     gtag('config', 'UA-161135981-1');
   </script>
+  
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="fontello.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:700|Roboto&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -22,76 +23,75 @@
 </head>
 <body>
   <header id="yak1">
-    <div class="wrrapper-header-content">
-      <div class="wrapper-menu">
-        <div class="logo">
+    <div class="header">
+      <div class="header__wrapper">
+        <div class="header__wrapper__logo">
           <img src="icon/e.png">
         </div>
-        <div class="menu">
-            <div class="menu-block">
-                <nav class="menu-nav">
-                  <a class="menu-nav__link" href="#yak1">Home</a>
-                  <a class="menu-nav__link" href="#yak2">About</a>
-                  <a class="menu-nav__link" href="#yak3">Skill</a>
-                  <a class="menu-nav__link" href="#yak4">Work</a>
-                  <a class="menu-nav__link" href="#yak5">Contact</a>
-                </nav>
+        <div class="header__wrapper__menu">
+          <div class="header__wrapper__menu__block">
+            <nav class="menu-nav">
+              <a class="menu-nav__link" href="#yak1">Home</a>
+              <a class="menu-nav__link" href="#yak2">About</a>
+              <a class="menu-nav__link" href="#yak3">Skill</a>
+              <a class="menu-nav__link" href="#yak4">Work</a>
+              <a class="menu-nav__link" href="#yak5">Contact</a>
+            </nav>
+          </div>
+          <a href="#" class="menu-button">
+            <div class="menu-button__bento">
+              <div class="menu-button__bento__wrraper">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
               </div>
-              <a href="#" class="menu-button">
-                <div class="menu-bento">
-                  <div class="wrraper-dot">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                  </div>
-                  <div class="wrraper-dot">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                  </div>
-                  <div class="wrraper-dot">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                  </div>
-                  </div>
-                </a>
-            </div>
-            <script>
-              $('.menu-button').on('click', function(e){
-                e.preventDefault;
-                $('.menu-nav').toggleClass('menu-nav__active');
-              });
-            </script>
-        </div>
-      </div>
-      <div class="header-text">
-        <h1>be simple</h1>
-        <p>"You only live once,<br> but if you do it rigth, once is enough"</p>
-      </div>
-      <div class="header-media">
-        <p>Elvira Dolynna</p>
-        <div class="wrapper-imgs">
-          <a href="https://t.me/edolynna" target="_blank"><i class="icon-telegram"></i></a>
-          <a href="mailto:elviradolynna@gmail.com" target="_blank"><i class="icon-gmail"></i></a>
-          <a href="https://www.instagram.com/eirafane/" target="_blank"><i class="icon-instagram"></i></a>
-        </div>
+              <div class="menu-button__bento__wrraper">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+              </div>
+              <div class="menu-button__bento__wrraper">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+              </div>
+              </div>
+            </a>
+          </div>
+          <script>
+            $('.menu-button').on('click', function(e){
+              e.preventDefault;
+              $('.menu-nav').toggleClass('menu-nav__active');
+            });
+          </script>
       </div>
     </div>
-    <a href="#yak2"><img class="arrow-down"src="icon/arrow.png" alt=""></a>
+    <div class="header-text">
+      <h1>be simple</h1>
+      <p>"You only live once,<br> but if you do it rigth, once is enough"</p>
+    </div>
+    <div class="header-media">
+      <p>Elvira Dolynna</p>
+      <div class="header-media__img">
+        <a href="https://t.me/edolynna" target="_blank"><i class="icon-telegram"></i></a>
+        <a href="mailto:elviradolynna@gmail.com" target="_blank"><i class="icon-gmail"></i></a>
+        <a href="https://www.instagram.com/eirafane/" target="_blank"><i class="icon-instagram"></i></a>
+      </div>
+    </div>
+    <a href="#yak2"><img class="header__arrow-down"src="icon/arrow.png" alt=""></a>
   </header>
 
   <section class="about" id="yak2">
-    <div class="about-me">
-      <div class="wrraper-about-me">
-        <div class="wrapper-about-me__photo">
-          <div class="about-me__photo">
+    <div class="about__content">
+      <div class="about__content__wrapper">
+        <div class="about__content__wrapper__photo">
+          <div class="about__content__wrapper__photo__me">
             <div class="border-solid"></div>
               <div class="border-dotted"></div>
                 <img src="img/me.jpeg" alt="me">
           </div>
         </div>
-        <div class="about-me__text">
+        <div class="about__content__wrapper__text">
           <h1>About me</h1>
           <p>Hi! My name is Elvira and I am a junior developer. I live in Kyiv <br>
             and study Computer Science in State University of Telecommunications.<br>
@@ -100,18 +100,17 @@
 
           <p>Here you can learn more about my current skills and look at my<br>
             completed projects. I never stop growing and develop myself<br>
-            professionally and personally. I’m creative, devoted to my job,<br>
-            and friendly person.</p>
-        <div class="about-me__information">
-          <div class="wrapper-about-me__information">
+            professionally and personally. I’m creative, devoted to my job, and friendly person.</p>
+        <div class="about__content__wrapper__text__information">
+          <div class="about__content__wrapper__text__information__wrapper">
             <i class="icon-map-marker-alt-solid"></i>
             <span>Kyiv, Ukraine</span>
           </div>
-          <div class="wrapper-about-me__information">
+          <div class="about__content__wrapper__text__information__wrapper">
             <i class="icon-id-card-solid"></i>
             <span>18</span>
           </div>
-          <div class="wrapper-about-me__information">
+          <div class="about__content__wrapper__text__information__wrapper">
             <i class="icon-user-graduate-solid"></i>
             <span>Computer Sience</span>
           </div>
@@ -121,46 +120,46 @@
     </div>
   </section>
 
-  <section class="skills" id="yak3">
-    <div class="skill-ablitie">
+  <section class="skill" id="yak3">
+    <div class="skill__abilitiy">
       <h1>My skills and abilities</h1>
       <p>The only way to do great work is to love what you do.</p>
-      <div class="skills__circle">
-        <div class="skills__circle__block">
-          <div class="skills__circle__block__item">
-            <div class="skills__circle__block__item__content">
+      <div class="skill__abilitiy__circle">
+        <div class="skill__abilitiy__circle__block">
+          <div class="skill__abilitiy__circle__block__item">
+            <div class="skill__abilitiy__circle__block__item__content">
               <p>80%</p>
             </div>
           </div>
           <p>HTML / CSS</p>
         </div>
-        <div class="skills__circle__block">
-          <div class="skills__circle__block__item">
-            <div class="skills__circle__block__item__content">
+        <div class="skill__abilitiy__circle__block">
+          <div class="skill__abilitiy__circle__block__item">
+            <div class="skill__abilitiy__circle__block__item__content">
               <p>40%</p>
             </div>
           </div>
           <p>JavaScript</p>
         </div>
-        <div class="skills__circle__block">
-          <div class="skills__circle__block__item">
-            <div class="skills__circle__block__item__content">
+        <div class="skill__abilitiy__circle__block">
+          <div class="skill__abilitiy__circle__block__item">
+            <div class="skill__abilitiy__circle__block__item__content">
               <p>30%</p>
               </div>
             </div>
           <p>Vue.js</p>
         </div>
-        <div class="skills__circle__block">
-          <div class="skills__circle__block__item">
-            <div class="skills__circle__block__item__content">
+        <div class="skill__abilitiy__circle__block">
+          <div class="skill__abilitiy__circle__block__item">
+            <div class="skill__abilitiy__circle__block__item__content">
               <p>55%</p>
               </div>
             </div>
           <p>Python</p>
         </div>
-        <div class="skills__circle__block">
-          <div class="skills__circle__block__item">
-            <div class="skills__circle__block__item__content">
+        <div class="skill__abilitiy__circle__block">
+          <div class="skill__abilitiy__circle__block__item">
+            <div class="skill__abilitiy__circle__block__item__content">
               <p>70%</p>
             </div>
           </div>
@@ -168,10 +167,10 @@
         </div>
       </div>
     </div>
-    <div class="knowledge">
+    <div class="skill__knowledge">
       <h1>Knowledge</h1>
       <p>Every day I'm getting better</p>
-      <div class="knowledge__circle">
+      <div class="skill__knowledge__circle">
         <div class="circle">
           <p>Git</p>
         </div>
@@ -204,9 +203,9 @@
         </div>
       </div>
     </div>
-    <div class="certification">
+    <div class="skill__certification">
       <h1>Certification</h1>
-      <div class="certification__item">
+      <div class="skill__certification__item">
         <p>CISCO:</p>
         <p>PCAP - Programming Essentials in Python</p>
         <p>NDG Linux Essentials</p>
@@ -215,80 +214,80 @@
     </div>
   </section>
 
-  <section class="works" id="yak4">
+  <section class="work" id="yak4">
     <h4>Works</h4>
-    <div class="wrraper-work">
-      <div class="works__item">
+    <div class="work__wrapper">
+      <div class="work__wrapper__item">
         <div id="square-1"></div>
-        <div class="projects-name">
+        <div class="work__wrapper__item__projects-name">
           <h1>Elvira Dolynna</h1>
         </div>
       </div>
-      <div class="works__item">
+      <div class="work__wrapper__item">
         <div id="square-2">
           <div class="in-square"></div>
         </div>
-        <div class="projects-name">
+        <div class="work__wrapper__item__projects-name">
           <h1>Processing</h1>
         </div>
       </div>
-      <div class="works__item">
+      <div class="work__wrapper__item">
         <div id="square-3">
           <div class="in-square"></div>
         </div>
-        <div class="projects-name">
+        <div class="work__wrapper__item__projects-name">
           <h1>Processing</h1>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="contacts" id="yak5">
-    <div class="wrraper-contacts">
+  <section class="contact" id="yak5">
+    <div class="contact__wrapper">
       <h4>Contacts</h4>
       <p>You can click on the icon to contact me.</p>
-      <div class="contacts__iteams">
-        <div class="contacts__iteams__block">
-          <div class="contacts__iteams__block__elements">
+      <div class="contact__wrapper__item">
+        <div class="contact__wrapper__item__block">
+          <div class="contact__wrapper__item__block__elements">
             <a href="https://t.me/edolynna" target="_blank"><i class="icon-telegram"></i></a>
-            <div class="contacts__iteams__block__elements__text">
+            <div class="contact__wrapper__item__block__elements__text">
               <p>Telegram</p>
               <span>+380509913402</span>
             </div>
           </div>
-          <div class="contacts__iteams__block__elements">
+          <div class="contact__wrapper__item__block__elements">
             <a href="https://github.com/edolynna" target="_blank"><i class="icon-github-brands"></i></a>
-            <div class="contacts__iteams__block__elements__text">
+            <div class="contact__wrapper__item__block__elements__text">
               <p>Github</p>
               <span>edolynna</span>
             </div>
           </div>
-          <div class="contacts__iteams__block__elements">
+          <div class="contact__wrapper__item__block__elements">
             <a href="https://www.instagram.com/eirafane/" target="_blank"><i class="icon-instagram"></i></a>
-            <div class="contacts__iteams__block__elements__text">
+            <div class="contact__wrapper__item__block__elements__text">
               <p>Instagram</p>
               <span>eirafane</span>
             </div>
           </div>
         </div>
-        <div class="contacts__iteams__block">
-          <div class="contacts__iteams__block__elements">
+        <div class="contact__wrapper__item__block">
+          <div class="contact__wrapper__item__block__elements">
             <a href="tel:+380509913402" target="_blank"><i class="icon-phone-solid"></i></a>
-            <div class="contacts__iteams__block__elements__text">
+            <div class="contact__wrapper__item__block__elements__text">
               <p>Phone</p>
               <span>+380509913402</span>
             </div>
           </div>
-          <div class="contacts__iteams__block__elements">
+          <div class="contact__wrapper__item__block__elements">
             <a href="mailto:elviradolynna@gmail.com" target="_blank"><i class="icon-gmail"></i></a>
-            <div class="contacts__iteams__block__elements__text">
+            <div class="contact__wrapper__item__block__elements__text">
               <p>Gmail</p>
               <span>elviradolynna@gmail.com</span>
             </div>
           </div>
-          <div class="contacts__iteams__block__elements">
+          <div class="contact__wrapper__item__block__elements">
             <a href="http://www.dut.edu.ua/ua/" target="_blank"><i class="icon-university-solid"></i></a>
-            <div class="contacts__iteams__block__elements__text">
+            <div class="contact__wrapper__item__block__elements__text">
               <p>University</p>
               <span>State University of Telecommunications</span>
             </div>
