@@ -2,8 +2,8 @@
 body 
   margin: 0
   padding: 0
-  min-width: 1440px
-  min-height: 800px
+  // min-width: 1440px
+  // min-height: 800px
 
 /* HEADER */ 
 
@@ -117,6 +117,52 @@ header
       .icon-instagram:hover
         color: #D63447;
 
+@media only screen and (max-width: 320px)
+  header
+    .header
+      &__wrapper
+        padding: 20px
+        img 
+          width: 40px
+          height: 40px
+        &__logo
+          width: 50%
+          height: 50%
+        &__menu
+          &__block
+            width: 100px
+            .menu-nav 
+              a 
+                font-size: 10px
+          .menu-button
+            display: none
+            &__bento
+              &__wrapper
+                .dot 
+                  width: 5px
+                  height: 5px         
+    .header-text
+      padding-bottom: 150px
+      h1 
+        font-size: 40px
+        padding-left: 30px
+      p 
+        font-size: 10px
+        margin-left: 30px
+    .header-media
+      padding: 25px
+      justify-content: flex-end 
+      p 
+        font-size: 15px
+        display: none
+      &__img
+        width: 100px
+        .icon-telegram, .icon-gmail, .icon-instagram
+          font-size: 25px
+
+
+
+
 .about 
   margin: 0
   height: 100vh
@@ -189,6 +235,27 @@ header
               color: #f0f0f0
               font-size: 30px
 
+@media only screen and (max-width: 320px)
+  .about 
+    &__content
+      &__wrapper
+        &__photo 
+          display: none
+          &__me 
+        &__text
+          h1 
+            font-size: 15px
+          p 
+            font-size: 15px
+          &__information
+            &__wrapper
+              .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
+                // color: #f0f0f0
+                font-size: 20px
+              span
+                font-size: 10px
+
+
 .skill 
   display: flex
   flex-direction: column
@@ -197,7 +264,7 @@ header
   margin: 0
   height: 100vh
   background-color: #0C0D0E
-  &__abilitiy
+  &__ability
     display: flex
     flex-direction: column
     align-items: center
@@ -210,7 +277,7 @@ header
     p 
       color: #f0f0f0
       font-size: 12px 
-      font-family: 'Noto Serif', serif
+      font-family: 'Roboto', sans-serif
     &__circle
       display: flex
       justify-content: space-around
@@ -242,23 +309,23 @@ header
              color: #f0f0f0
              margin: 0
       &__block:nth-child(1)
-        .skill__abilitiy__circle__block__item
+        .skill__ability__circle__block__item
           &__content
             height: 95px
       &__block:nth-child(2)
-        .skill__abilitiy__circle__block__item
+        .skill__ability__circle__block__item
           &__content
             height: 55px
       &__block:nth-child(3)
-        .skill__abilitiy__circle__block__item
+        .skill__ability__circle__block__item
           &__content
             height: 45px
       &__block:nth-child(4)
-        .skill__abilitiy__circle__block__item
+        .skill__ability__circle__block__item
           &__content
             height: 70px
       &__block:nth-child(5)
-        .skill__abilitiy__circle__block__item
+        .skill__ability__circle__block__item
           &__content
             height: 85px
 .skill
@@ -339,6 +406,84 @@ header
         font-size: 18px
         font-family: 'Roboto', sans-serif
 
+@media only screen and (max-width: 320px)
+  .skill
+    justify-content: center
+    &__ability
+      h1
+        font-size: 15px
+      p 
+        font-size: 8px
+      &__circle
+        &__block 
+        &__block:nth-child(1)
+          .skill__ability__circle__block__item
+            &__content
+              height: 40px
+        &__block:nth-child(2)
+          .skill__ability__circle__block__item
+            &__content
+              height: 20px
+        &__block:nth-child(3)
+          .skill__ability__circle__block__item
+            &__content
+              height: 15px
+        &__block:nth-child(4)
+          .skill__ability__circle__block__item
+            &__content
+              height: 25px
+        &__block:nth-child(5)
+          .skill__ability__circle__block__item
+            &__content
+              height: 35px
+      &__circle
+        &__block
+          margin: 2%
+          &__item
+            width: 50px
+            height: 50px
+            &__content
+    &__knowledge
+      h1 
+        font-size: 15px
+      p 
+        font-size: 8px
+      &__circle
+        flex-direction: column
+        align-items: center
+        .circle
+          width: 30px
+          height: 30px
+          margin: 2px
+          p 
+            font-size: 8px
+          span 
+            font-size: 8px
+          &:nth-child(1)
+            width: 40px
+            height: 40px
+          &:nth-child(3)
+            width: 35px
+            height: 35px
+            border: 5px solid #D63447 
+          &:nth-child(6)
+            width: 55px
+            height: 55px
+          &:nth-child(8)
+            width: 25px
+            height: 25px
+            border: 7px solid #f0f0f0
+          &:nth-child(9)
+            width: 55px
+            height: 55px
+          &:nth-child(10)
+            width: 35px
+            height: 35px     
+    &__certification
+      display: none
+
+
+
 .work 
   display: flex
   flex-direction: column
@@ -402,6 +547,23 @@ header
           font-size: 20px
           font-family: 'Roboto', sans-serif
           text-transform: uppercase
+
+@media only screen and (max-width: 320px)
+  .work 
+    h4 
+      font-size: 15px
+    &__wrapper
+      flex-direction: column 
+      &__item
+        #square-1, #square-2, #square-3
+          width: 100px
+          height: 120px
+          border-radius: 35px
+        .in-square
+        &__projects-name
+          h1 
+            font-size: 15px
+s
 
 .contact 
   display: flex
@@ -468,3 +630,35 @@ header
               color: #f0f0f0
               font-size: 15px
               font-family: 'Roboto', sans-serif
+
+
+@media only screen and (max-width: 320px)
+  .contact
+    h4 
+      font-size: 15px
+    p 
+      font-size: 8px
+    &__wrapper
+      height: 95%
+      border: 3px solid #D63447
+      &__item
+        flex-direction: column
+        margin-top: 50px
+        align-items: flex-end
+        justify-content: center
+        &__block
+          &__elements
+            width: 210px
+            height: 60px
+            margin: 0
+            i 
+              width: 40px
+              height: 40px
+              font-size: 20px
+            &__text
+              justify-content: center
+              p 
+                font-size: 10px
+                margin-top: 0 
+              span 
+                font-size: 8px
