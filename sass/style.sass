@@ -2,6 +2,7 @@
 body 
   margin: 0
   padding: 0
+  -webkit-font-smoothing: antialiased;
   // min-width: 1440px
   // min-height: 800px
 
@@ -255,6 +256,38 @@ header
               span
                 font-size: 10px
 
+$circle_num-zero: -27%
+$circle-1_percent: $circle_num-zero - 35%
+$circle-2_percent: $circle_num-zero - 20%
+$circle-3_percent: $circle_num-zero - 15%
+$circle-4_percent: $circle_num-zero - 25%
+$circle-5_percent: $circle_num-zero - 30%
+
+@keyframes spin-circle-1
+  0%
+    transform: translateY(-25%) rotate(0deg)
+  100%
+    transform: translateY($circle-1_percent) rotate(400deg)
+@keyframes spin-circle-2
+  0%
+    transform: translateY(-25%) rotate(0deg)
+  100%
+    transform: translateY($circle-2_percent) rotate(400deg)
+@keyframes spin-circle-3
+  0%
+    transform: translateY(-25%) rotate(0deg)
+  100%
+    transform: translateY($circle-3_percent) rotate(400deg)
+@keyframes spin-circle-4
+  0%
+    transform: translateY(-25%) rotate(0deg)
+  100%
+    transform: translateY($circle-4_percent) rotate(400deg)
+@keyframes spin-circle-5
+  0%
+    transform: translateY(-25%) rotate(0deg)
+  100%
+    transform: translateY($circle-5_percent) rotate(500deg)
 
 .skill 
   display: flex
@@ -297,37 +330,92 @@ header
           border-radius: 50%
           width: 115px
           height: 115px
-          // margin-bottom: 10px
           overflow: hidden
+          border: 0.25rem solid #0C0D0E
           &__content
             display: flex
             justify-content: center
             align-items: center
             width: 100%
             background-color: #D63447
+            position: relative
+            outline: 0
+            overflow: hidden
             p 
              color: #f0f0f0
              margin: 0
-      &__block:nth-child(1)
-        .skill__ability__circle__block__item
-          &__content
-            height: 95px
-      &__block:nth-child(2)
-        .skill__ability__circle__block__item
-          &__content
-            height: 55px
-      &__block:nth-child(3)
-        .skill__ability__circle__block__item
-          &__content
-            height: 45px
-      &__block:nth-child(4)
-        .skill__ability__circle__block__item
-          &__content
-            height: 70px
-      &__block:nth-child(5)
-        .skill__ability__circle__block__item
-          &__content
-            height: 85px
+            span 
+              color: #f0f0f0
+              // color: #53cdfd
+              // mix-blend-mode: difference;
+              font-size: 20px
+              font-family: 'Roboto', sans-serif
+              width: 100%
+              z-index: 1000
+          &__content::before
+            content: ""
+            font-size: 20px
+            font-family: 'Roboto', sans-serif
+            color: #f0f0f0
+            width: 10px
+            height: 115px
+            display: flex
+            align-items: center
+            justify-content: center
+          &__content::after
+            content: ""
+            position: absolute
+            bottom: -50%
+            left: -50%
+            width: 200%
+            height: 200%
+            background-color: #f0f0f0
+            border-radius: 45%
+        &:nth-child(1)
+          .skill__ability__circle__block__item
+            &__content::after
+              animation: spin-circle-1 5s ease-in-out forwards
+        &:nth-child(2)
+          .skill__ability__circle__block__item
+            &__content::after
+              animation: spin-circle-2 5s ease-in-out forwards
+        &:nth-child(3)
+          .skill__ability__circle__block__item
+            &__content::after
+              animation: spin-circle-3 5s ease-in-out forwards
+        &:nth-child(4)
+          .skill__ability__circle__block__item
+            &__content::after
+              animation: spin-circle-4 5s ease-in-out forwards
+        &:nth-child(5)
+          .skill__ability__circle__block__item
+            &__content::after
+              animation: spin-circle-5 5s ease-in-out forwards
+      // &__block:nth-child(1)
+        // .skill__ability__circle__block__item
+          // &__content:nth-child(1)
+          //   // height: 95px
+          //   @keyframes spin
+          //     0%
+          //       transform: translateY(0) rotate(0deg)
+          //     100%
+          //       transform: translateY(-70%) rotate(500deg)
+      // &__block:nth-child(2)
+      //   .skill__ability__circle__block__item
+      //     &__content
+      //       height: 55px
+      // &__block:nth-child(3)
+      //   .skill__ability__circle__block__item
+      //     &__content
+      //       height: 45px
+      // &__block:nth-child(4)
+      //   .skill__ability__circle__block__item
+      //     &__content
+      //       height: 70px
+      // &__block:nth-child(5)
+      //   .skill__ability__circle__block__item
+      //     &__content
+      //       height: 85px
 .skill
   h1 
     color: #f0f0f0
@@ -356,11 +444,15 @@ header
         background-color: #f0f0f0 
         border-radius: 80px 
         margin: 3px
+        transition: 0.3s ease
+        &:hover
+          transform: scale(1.2)
         span 
           display: flex
           justify-content: center
           color: #0C0D0E
-          font-size: 12px
+          font-size: 15px
+          // font-weight: 800
           font-family: 'Roboto', sans-serif
         p 
           display: flex
@@ -372,7 +464,7 @@ header
           width: 100px
           height: 100px
           background-color: #D63447
-          color: #f0f0f0 
+          color: #f0f0f0
         &:nth-child(3)
           width: 90px
           height: 90px
@@ -393,6 +485,7 @@ header
           height: 75px 
         &:nth-child(5), &:nth-child(7), &:nth-child(9)
           background-color: #D63447
+    
   &__certification
     display: flex
     flex-direction: column
