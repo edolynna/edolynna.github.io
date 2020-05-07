@@ -159,10 +159,51 @@ header
       &__img
         width: 100px
         .icon-telegram, .icon-gmail, .icon-instagram
-          font-size: 25px
+          font-size: 20px
+          // margin: 10px
 
-
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+  header
+    .header
+      &__wrapper
+        padding: 20px
+        img 
+          width: 45px
+          height: 45px
+        &__logo
+          width: 50%
+          height: 50%
+        &__menu
+          &__block
+            width: 100px
+            .menu-nav 
+              a 
+                font-size: 10px
+          .menu-button
+            display: none
+            &__bento
+              &__wrapper
+                .dot 
+                  width: 5px
+                  height: 5px      
+    .header-text
+      padding-bottom: 150px
+      h1 
+        font-size: 45px
+        padding-left: 30px
+      p 
+        font-size: 15px
+        margin-left: 30px
+    .header-media
+      padding: 25px
+      justify-content: flex-end 
+      p 
+        font-size: 15px
+        display: none
+      &__img
+        width: 100px
+        .icon-telegram, .icon-gmail, .icon-instagram
+          font-size: 28px
 
 .about 
   margin: 0
@@ -248,6 +289,28 @@ header
             font-size: 15px
           p 
             font-size: 15px
+          &__information
+            &__wrapper
+              .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
+                // color: #f0f0f0
+                font-size: 20px
+              span
+                font-size: 10px
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+  .about 
+    &__content
+      width: 100%
+      &__wrapper
+        &__photo 
+          display: none
+          &__me 
+        &__text
+          h1 
+            font-size: 20px
+          p 
+            font-size: 11px
+            width: 100%
           &__information
             &__wrapper
               .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
@@ -391,31 +454,8 @@ $circle-5_percent: $circle_num-zero - 30%
           .skill__ability__circle__block__item
             &__content::after
               animation: spin-circle-5 5s ease-in-out forwards
-      // &__block:nth-child(1)
-        // .skill__ability__circle__block__item
-          // &__content:nth-child(1)
-          //   // height: 95px
-          //   @keyframes spin
-          //     0%
-          //       transform: translateY(0) rotate(0deg)
-          //     100%
-          //       transform: translateY(-70%) rotate(500deg)
-      // &__block:nth-child(2)
-      //   .skill__ability__circle__block__item
-      //     &__content
-      //       height: 55px
-      // &__block:nth-child(3)
-      //   .skill__ability__circle__block__item
-      //     &__content
-      //       height: 45px
-      // &__block:nth-child(4)
-      //   .skill__ability__circle__block__item
-      //     &__content
-      //       height: 70px
-      // &__block:nth-child(5)
-      //   .skill__ability__circle__block__item
-      //     &__content
-      //       height: 85px
+
+
 .skill
   h1 
     color: #f0f0f0
@@ -576,6 +616,84 @@ $circle-5_percent: $circle_num-zero - 30%
       display: none
 
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+  .skill
+    justify-content: center
+    &__ability
+      h1
+        font-size: 18px
+      p 
+        font-size: 8px
+      &__circle
+        &__block 
+        &__block:nth-child(1)
+          .skill__ability__circle__block__item
+            &__content
+              height: 40px
+        &__block:nth-child(2)
+          .skill__ability__circle__block__item
+            &__content
+              height: 20px
+        &__block:nth-child(3)
+          .skill__ability__circle__block__item
+            &__content
+              height: 15px
+        &__block:nth-child(4)
+          .skill__ability__circle__block__item
+            &__content
+              height: 25px
+        &__block:nth-child(5)
+          .skill__ability__circle__block__item
+            &__content
+              height: 35px
+      &__circle
+        &__block
+          margin: 2%
+          &__item
+            width: 50px
+            height: 50px
+            &__content
+    &__knowledge
+      h1 
+        font-size: 18px
+      p 
+        font-size: 8px
+      &__circle
+        flex-direction: column
+        align-items: center
+        .circle
+          width: 30px
+          height: 30px
+          margin: 2px
+          p 
+            font-size: 8px
+          span 
+            font-size: 8px
+          &:nth-child(1)
+            width: 40px
+            height: 40px
+          &:nth-child(3)
+            width: 35px
+            height: 35px
+            border: 5px solid #D63447 
+          &:nth-child(6)
+            width: 55px
+            height: 55px
+          &:nth-child(8)
+            width: 25px
+            height: 25px
+            border: 7px solid #f0f0f0
+          &:nth-child(9)
+            width: 55px
+            height: 55px
+          &:nth-child(10)
+            width: 35px
+            height: 35px     
+    &__certification
+      display: none
+
+
+
 
 .work 
   display: flex
@@ -656,8 +774,24 @@ $circle-5_percent: $circle_num-zero - 30%
         .in-square
         &__projects-name
           h1 
-            font-size: 15px
-s
+            font-size: 10px
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+  .work 
+    h4 
+      font-size: 15px
+    &__wrapper
+      flex-direction: column 
+      &__item
+        #square-1, #square-2, #square-3
+          width: 110px
+          height: 130px
+          border-radius: 35px
+        .in-square
+        &__projects-name
+          h1 
+            font-size: 10px
 
 .contact 
   display: flex
@@ -756,3 +890,38 @@ s
                 margin-top: 0 
               span 
                 font-size: 8px
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+  .contact
+    h4 
+      font-size: 15px
+    p 
+      font-size: 8px
+    &__wrapper
+      height: 95%
+      border: 3px solid #D63447
+      &__item
+        flex-direction: column
+        margin-top: 50px
+        align-items: center
+        justify-content: center
+        &__block
+          &__elements
+            width: 270px
+            height: 60px
+            margin: 0
+            display: flex
+            align-items: center
+            i 
+              width: 45px
+              height: 45px
+              font-size: 20px
+              margin: 20px
+            &__text
+              justify-content: center
+              p 
+                font-size: 12px
+                margin: 0
+              span 
+                font-size: 10px 
