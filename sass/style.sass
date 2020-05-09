@@ -205,6 +205,49 @@ header
         .icon-telegram, .icon-gmail, .icon-instagram
           font-size: 28px
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+  header
+    .header
+      &__wrapper
+        padding: 20px
+        img 
+          width: 45px
+          height: 45px
+        &__logo
+          width: 50%
+          height: 50%
+        &__menu
+          &__block
+            width: 100px
+            .menu-nav 
+              a 
+                font-size: 10px
+          .menu-button
+            display: none
+            &__bento
+              &__wrapper
+                .dot 
+                  width: 5px
+                  height: 5px      
+    .header-text
+      padding-bottom: 150px
+      h1 
+        font-size: 55px
+        padding-left: 70px
+      p 
+        font-size: 20px
+        margin-left: 70px
+    .header-media
+      padding: 25px
+      justify-content: flex-end 
+      p 
+        font-size: 15px
+        display: none
+      &__img
+        width: 100px
+        .icon-telegram, .icon-gmail, .icon-instagram
+          font-size: 28px 
+
 .about 
   margin: 0
   height: 100vh
@@ -318,6 +361,29 @@ header
                 font-size: 20px
               span
                 font-size: 10px
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+  .about 
+    &__content
+      width: 100%
+      &__wrapper
+        &__photo 
+          display: none
+          &__me 
+        &__text
+          h1 
+            font-size: 20px
+          p 
+            font-size: 12px
+            width: 100%
+          &__information
+            &__wrapper
+              .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
+                // color: #f0f0f0
+                font-size: 22px
+              span
+                font-size: 12px  
+
 
 $circle_num-zero: -27%
 $circle-1_percent: $circle_num-zero - 35%
@@ -692,8 +758,104 @@ $circle-5_percent: $circle_num-zero - 30%
     &__certification
       display: none
 
-
-
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+  .skill
+    // justify-content: center
+    &__ability
+      h1
+        font-size: 20px
+      p 
+        font-size: 10px
+      &__circle
+        // &__block 
+        // &__block:nth-child(1)
+        //   .skill__ability__circle__block__item
+        //     &__content
+        //       height: 40px
+        // &__block:nth-child(2)
+        //   .skill__ability__circle__block__item
+        //     &__content
+        //       height: 20px
+        // &__block:nth-child(3)
+        //   .skill__ability__circle__block__item
+        //     &__content
+        //       height: 15px
+        // &__block:nth-child(4)
+        //   .skill__ability__circle__block__item
+        //     &__content
+        //       height: 25px
+        // &__block:nth-child(5)
+        //   .skill__ability__circle__block__item
+        //     &__content
+        //       height: 35px
+      &__circle
+        &__block
+          margin: 2%
+          &__item
+            width: 80px
+            height: 80px
+            &__content
+    &__knowledge
+      h1 
+        font-size: 20px
+      p 
+        font-size: 10px
+      &__circle
+        // flex-direction: column
+        align-items: center
+        .circle
+          // width: 30px
+          // height: 30px
+          margin: 2px
+          p 
+            font-size: 8px
+          span 
+            font-size: 8px
+          &:nth-child(1)
+            width: 60px
+            height: 60px
+          &:nth-child(2)
+            height: 50px
+            width: 50px
+          &:nth-child(3)
+            width: 75px
+            height: 75px
+            border: 7px solid #D63447 
+          &:nth-child(4)
+            height: 40px
+            width: 40px
+          &:nth-child(5)
+            height: 45px
+            width: 45px
+          &:nth-child(6)
+            width: 75px
+            height: 75px
+          &:nth-child(7)
+            width: 45px
+            height: 45px
+          &:nth-child(8)
+            width: 45px
+            height: 45px
+            border: 9px solid #f0f0f0
+          &:nth-child(9)
+            width: 75px
+            height: 75px
+          &:nth-child(10)
+            width: 55px
+            height: 55px     
+    &__certification
+      // display: none
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 100%
+      &__item
+        width: 80%
+        display: flex
+        justify-content: space-around
+        p 
+          font-size: 12px
+          font-family: 'Roboto', sans-serif
 
 .work 
   display: flex
@@ -788,6 +950,24 @@ $circle-5_percent: $circle_num-zero - 30%
           width: 110px
           height: 130px
           border-radius: 35px
+        .in-square
+        &__projects-name
+          h1 
+            font-size: 10px
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+  .work 
+    justify-content: center
+    h4 
+      font-size: 15px
+    &__wrapper
+      // flex-direction: column 
+      &__item
+        #square-1, #square-2, #square-3
+          width: 180px
+          height: 240px
+          border-radius: 45px
         .in-square
         &__projects-name
           h1 
@@ -925,3 +1105,37 @@ $circle-5_percent: $circle_num-zero - 30%
                 margin: 0
               span 
                 font-size: 10px 
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+  .contact
+    h4 
+      font-size: 20px
+    p 
+      font-size: 10px
+    &__wrapper
+      height: 95%
+      border: 3px solid #D63447
+      &__item
+        flex-direction: column
+        margin-top: 50px
+        align-items: center
+        justify-content: center
+        &__block
+          &__elements
+            width: 270px
+            height: 60px
+            margin: 0
+            display: flex
+            align-items: center
+            i 
+              width: 50px
+              height: 50px
+              font-size: 20px
+              margin: 20px
+            &__text
+              justify-content: center
+              p 
+                font-size: 14px
+                margin: 0
+              span 
+                font-size: 10px
