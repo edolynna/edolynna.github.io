@@ -1,3 +1,4 @@
+@import './colors'
 
 body 
   margin: 0
@@ -13,7 +14,7 @@ body
   top: 0
   width: 100%
   height: 100vh
-  background: #D63447 
+  background: $red  
   z-index: 9999999
   transition: 1s all
   opacity: 1
@@ -80,7 +81,7 @@ header
               display: inline-block
               margin-right: 20px
               text-decoration: none
-              color: #D63447
+              color: $red
               font-size: 18px
               font-family: 'Noto Serif', serif
             &__active
@@ -104,7 +105,7 @@ header
                 left: 50%
                 width: 10px
                 height: 10px
-                background-color: #D63447
+                background-color: $red
                 border-radius: 10px
                 margin: 3px
   .header-text
@@ -114,13 +115,13 @@ header
     h1 
       padding-left: 140px
       margin-bottom: 0
-      color: #f0f0f0
+      color: $white
       font-size: 75px
       font-family: 'Noto Serif', serif
     p 
       margin-left: 140px
       margin-top: 0
-      color: #D63447
+      color: $red
       font-size: 23px 
       font-family: 'Noto Serif', serif
   .header-media
@@ -132,7 +133,7 @@ header
     padding-left: 0
     padding-bottom: 17px  
     p 
-      color: #f0f0f0
+      color: $white
       font-size: 23px
       transform: rotate(-90deg)
       margin-bottom: 80px
@@ -141,14 +142,14 @@ header
       justify-content: space-between
       width: 150px
       .icon-telegram, .icon-gmail, .icon-instagram
-        color: #f0f0f0
+        color: $white
         font-size: 30px
       .icon-telegram:hover
-        color: #D63447;
+        color: $red;
       .icon-gmail:hover 
-        color: #D63447;
+        color: $red;
       .icon-instagram:hover
-        color: #D63447;
+        color: $red;
 
 @media only screen and (max-width: 320px)
   header
@@ -283,7 +284,7 @@ header
 .about 
   margin: 0
   height: 100vh
-  background-color: #0C0D0E
+  background-color: $black
   &__content
     display: flex
     justify-content: center
@@ -305,14 +306,14 @@ header
             width: 400px
             height: 400px
             z-index: 1
-            border: 5px solid #D63447
+            border: 5px solid $red
             position: absolute
             margin: 60px
           .border-dotted
             width: 430px
             height: 430px
             z-index: 1
-            border: 5px dotted #D63447
+            border: 5px dotted $red
             position: absolute
             margin: 45px
       &__text
@@ -321,19 +322,19 @@ header
         justify-content: space-between
         height: 400px 
         h1 
-          color: #f0f0f0
+          color: $white
           font-size: 20px
           font-family: 'Roboto', sans-serif
           text-transform: uppercase
           text-align: center 
         p 
           font-size: 18px
-          color: #f0f0f0
+          color: $white
           font-family: 'Roboto', sans-serif 
           // text-align: center 
         span 
           font-size: 18px
-          color: #f0f0f0
+          color: $white
           font-family: 'Roboto', sans-serif
         &__information
           display: flex
@@ -345,11 +346,11 @@ header
             &:nth-child(2) i 
               margin-right: 6px
             span
-              color: #f0f0f0
+              color: $white
               font-size: 18px
               font-family: 'Roboto', sans-serif
             .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
-              color: #f0f0f0
+              color: $white
               font-size: 30px
 
 @media only screen and (max-width: 320px)
@@ -367,7 +368,7 @@ header
           &__information
             &__wrapper
               .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
-                // color: #f0f0f0
+                // color: $white
                 font-size: 20px
               span
                 font-size: 10px
@@ -389,7 +390,7 @@ header
           &__information
             &__wrapper
               .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
-                // color: #f0f0f0
+                // color: $white
                 font-size: 20px
               span
                 font-size: 10px
@@ -411,7 +412,7 @@ header
           &__information
             &__wrapper
               .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
-                // color: #f0f0f0
+                // color: $white
                 font-size: 22px
               span
                 font-size: 12px  
@@ -457,19 +458,19 @@ $circle-5_percent: $circle_num-zero - 30%
   justify-content: space-around
   margin: 0
   height: 100vh
-  background-color: #0C0D0E
+  background-color: $black
   &__ability
     display: flex
     flex-direction: column
     align-items: center
     h1 
-      color: #f0f0f0
+      color: $white
       margin: 0
       font-size: 20px
       font-family: 'Roboto', sans-serif
       text-transform: uppercase
     p 
-      color: #f0f0f0
+      color: $white
       font-size: 12px 
       font-family: 'Roboto', sans-serif
     &__circle
@@ -480,33 +481,33 @@ $circle-5_percent: $circle_num-zero - 30%
         text-align: center
         margin: 5%
         p 
-          color: #f0f0f0
+          color: $white
           font-size: 18px
           font-family: 'Roboto', sans-serif
         &__item
           display: flex
           justify-content: center
           align-items: flex-end
-          background-color: #F0F0F0
+          background-color: $white
           border-radius: 50%
           width: 115px
           height: 115px
           overflow: hidden
-          border: 0.25rem solid #0C0D0E
+          border: 0.25rem solid $black
           &__content
             display: flex
             justify-content: center
             align-items: center
             width: 100%
-            background-color: #D63447
+            background-color: $red
             position: relative
             outline: 0
             overflow: hidden
             p 
-             color: #f0f0f0
+             color: $white
              margin: 0
             span 
-              color: #0C0D0E
+              color: $black
               // color: #53cdfd
               // mix-blend-mode: difference;
               font-size: 23px
@@ -517,7 +518,7 @@ $circle-5_percent: $circle_num-zero - 30%
             content: ""
             font-size: 20px
             font-family: 'Roboto', sans-serif
-            color: #f0f0f0
+            color: $white
             width: 10px
             height: 115px
             display: flex
@@ -530,7 +531,7 @@ $circle-5_percent: $circle_num-zero - 30%
             left: -50%
             width: 200%
             height: 200%
-            background-color: #f0f0f0
+            background-color: $white
             border-radius: 45%
         &:nth-child(1)
           .skill__ability__circle__block__item
@@ -556,13 +557,13 @@ $circle-5_percent: $circle_num-zero - 30%
 
 .skill
   h1 
-    color: #f0f0f0
+    color: $white
     margin: 0
     font-size: 20px
     font-family: 'Roboto', sans-serif
     text-transform: uppercase
   p 
-    color: #f0f0f0
+    color: $white
     font-size: 12px 
     font-family: 'Noto Serif', serif
   &__knowledge
@@ -579,7 +580,7 @@ $circle-5_percent: $circle_num-zero - 30%
         align-items: center 
         width: 80px 
         height: 80px 
-        background-color: #f0f0f0 
+        background-color: $white 
         border-radius: 80px 
         margin: 3px
         transition: 0.3s ease
@@ -588,33 +589,33 @@ $circle-5_percent: $circle_num-zero - 30%
         span 
           display: flex
           justify-content: center
-          color: #0C0D0E
+          color: $black
           font-size: 15px
           // font-weight: 800
           font-family: 'Roboto', sans-serif
         p 
           display: flex
           justify-content: center
-          color: #f0f0f0
+          color: $white
           font-size: 15px
           font-family: 'Roboto', sans-serif
         &:nth-child(1)
           width: 100px
           height: 100px
-          background-color: #D63447
-          color: #f0f0f0
+          background-color: $red
+          color: $white
         &:nth-child(3)
           width: 90px
           height: 90px
-          border: 10px solid #D63447 
+          border: 10px solid $red 
         &:nth-child(6) 
           width: 120px
           height: 120px
         &:nth-child(8) 
           width: 70px
           height: 70px
-          border: 10px solid #f0f0f0
-          background-color: #0C0D0E
+          border: 10px solid $white
+          background-color: $black
         &:nth-child(9)
           width: 130px
           height: 130px
@@ -622,7 +623,7 @@ $circle-5_percent: $circle_num-zero - 30%
           width: 75px
           height: 75px 
         &:nth-child(5), &:nth-child(7), &:nth-child(9)
-          background-color: #D63447
+          background-color: $red
     
   &__certification
     display: flex
@@ -679,14 +680,14 @@ $circle-5_percent: $circle_num-zero - 30%
           &:nth-child(3)
             width: 35px
             height: 35px
-            border: 5px solid #D63447 
+            border: 5px solid $red 
           &:nth-child(6)
             width: 55px
             height: 55px
           &:nth-child(8)
             width: 25px
             height: 25px
-            border: 7px solid #f0f0f0
+            border: 7px solid $white
           &:nth-child(9)
             width: 55px
             height: 55px
@@ -739,14 +740,14 @@ $circle-5_percent: $circle_num-zero - 30%
           &:nth-child(3)
             width: 35px
             height: 35px
-            border: 5px solid #D63447 
+            border: 5px solid $red 
           &:nth-child(6)
             width: 55px
             height: 55px
           &:nth-child(8)
             width: 25px
             height: 25px
-            border: 7px solid #f0f0f0
+            border: 7px solid $white
           &:nth-child(9)
             width: 55px
             height: 55px
@@ -801,7 +802,7 @@ $circle-5_percent: $circle_num-zero - 30%
           &:nth-child(3)
             width: 75px
             height: 75px
-            border: 7px solid #D63447 
+            border: 7px solid $red 
           &:nth-child(4)
             height: 40px
             width: 40px
@@ -817,7 +818,7 @@ $circle-5_percent: $circle_num-zero - 30%
           &:nth-child(8)
             width: 45px
             height: 45px
-            border: 9px solid #f0f0f0
+            border: 9px solid $white
           &:nth-child(9)
             width: 75px
             height: 75px
@@ -844,10 +845,10 @@ $circle-5_percent: $circle_num-zero - 30%
   align-items: center
   margin: 0
   height: 100vh
-  background-color: #0C0D0E
+  background-color: $black
   h4 
     margin: 4% 0
-    color: #f0f0f0
+    color: $white
     font-size: 20px
     font-family: 'Roboto', sans-serif
     text-transform: uppercase
@@ -897,7 +898,7 @@ $circle-5_percent: $circle_num-zero - 30%
       &__projects-name 
         display: flex
         h1 
-          color: #f0f0f0
+          color: $white
           font-size: 20px
           font-family: 'Roboto', sans-serif
           text-transform: uppercase
@@ -960,22 +961,22 @@ $circle-5_percent: $circle_num-zero - 30%
   align-items: center
   margin: 0
   height: 100vh
-  background-color: #0C0D0E
+  background-color: $black
   h4 
     margin-top: 5%
-    color: #f0f0f0
+    color: $white
     font-size: 20px
     font-family: 'Roboto', sans-serif
     text-transform: uppercase
   p 
-    color: #f0f0f0
+    color: $white
     font-size: 12px 
     font-family: 'Noto Serif', serif
   &__wrapper
     display: flex
     flex-direction: column
     align-items: center
-    border: 5px solid #D63447
+    border: 5px solid $red
     margin: 3%
     height: 90%
     width: 90%
@@ -998,9 +999,9 @@ $circle-5_percent: $circle_num-zero - 30%
             display: flex
             justify-content: center
             align-items: center
-            color: #D63447
+            color: $red
             font-size: 35px
-            background-color: #f0f0f0
+            background-color: $white
             border-radius: 50px
             width: 75px
             height: 75px
@@ -1012,11 +1013,11 @@ $circle-5_percent: $circle_num-zero - 30%
             width: 310px
             height: 95px 
             p  
-              color: #D63447
+              color: $red
               font-size: 18px
               font-family: 'Roboto', sans-serif
             span 
-              color: #f0f0f0
+              color: $white
               font-size: 15px
               font-family: 'Roboto', sans-serif
 
@@ -1029,7 +1030,7 @@ $circle-5_percent: $circle_num-zero - 30%
       font-size: 8px
     &__wrapper
       height: 95%
-      border: 3px solid #D63447
+      border: 3px solid $red
       &__item
         flex-direction: column
         margin-top: 50px
@@ -1061,7 +1062,7 @@ $circle-5_percent: $circle_num-zero - 30%
       font-size: 10px
     &__wrapper
       height: 95%
-      border: 3px solid #D63447
+      border: 3px solid $red
       &__item
         flex-direction: column
         margin-top: 50px
@@ -1095,7 +1096,7 @@ $circle-5_percent: $circle_num-zero - 30%
       font-size: 12px
     &__wrapper
       height: 95%
-      border: 3px solid #D63447
+      border: 3px solid $red
       &__item
         flex-direction: column
         margin-top: 50px
