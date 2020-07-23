@@ -56,9 +56,11 @@ header
     justify-content: space-between
     height: 95vh
     &__arrow-down
-      width: 33px;
-      height: 33px;
+      width: 40px;
+      height: 40px;
       margin: 0 auto;
+      position: relative
+      animation: bouncearrow 2s infinite
     &__wrapper
       display: flex
       align-items: center
@@ -112,6 +114,7 @@ header
     display: flex
     flex-direction: column
     padding: 0
+    margin-bottom: 30px
     h1 
       padding-left: 140px
       margin-bottom: 0
@@ -150,6 +153,13 @@ header
         color: $red;
       .icon-instagram:hover
         color: $red;
+  @keyframes bouncearrow 
+    0%
+      top: 0px
+    50%
+      top: 35px
+    100%
+      top: 0px
 
 @media only screen and (max-width: 320px)
   header
@@ -631,12 +641,17 @@ $circle-5_percent: $circle_num-zero - 30%
     align-items: center
     width: 100%
     &__item
-      width: 80%
-      display: flex
-      justify-content: space-around
-      p 
-        font-size: 18px
+      button 
+        width: 270px
+        height: 40px
+        background-color:#D63447
+        border-radius: 15px
+        border: none
+        color: white
+        font-size: 16px
+        margin-top: 24px
         font-family: 'Roboto', sans-serif
+        font-weight: 700
 
 @media only screen and (max-width: 320px)
   .skill
