@@ -567,8 +567,8 @@ $circle-5_percent: $circle_num-zero - 30%
     margin: 0
     font-size: 20px
     font-family: 'Roboto', sans-serif
-    text-transform: uppercase
-  p 
+    text-transform: uppercase   
+  h2, p 
     color: $white
     font-size: 12px 
     font-family: 'Noto Serif', serif
@@ -658,8 +658,12 @@ $circle-5_percent: $circle_num-zero - 30%
     &__ability
       h1
         font-size: 14px
-      p 
-        font-size: 8px
+        margin-top: 0
+      h2, p 
+        display: none
+      // p 
+      //   display: none
+        // font-size: 8px
       &__circle
         &__block
           margin: 1%
@@ -675,8 +679,10 @@ $circle-5_percent: $circle_num-zero - 30%
     &__knowledge
       h1 
         font-size: 14px
+        margin-top: 0
       p 
-        font-size: 8px
+        display: none
+        // font-size: 8px
       &__circle
         flex-direction: column
         align-items: center
@@ -709,7 +715,11 @@ $circle-5_percent: $circle_num-zero - 30%
             width: 35px
             height: 35px     
     &__certification
-      display: none
+      h1 
+        font-size: 16px
+      &__item
+        button
+      // display: none
 
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px)
@@ -718,7 +728,12 @@ $circle-5_percent: $circle_num-zero - 30%
     &__ability
       h1
         font-size: 16px
+        margin-bottom: 10px
+        // margin-top: 0px
+      h2 
+        display: none
       p 
+        // display: none
         font-size: 8px
       &__circle
         &__block
@@ -735,8 +750,11 @@ $circle-5_percent: $circle_num-zero - 30%
     &__knowledge
       h1 
         font-size: 16px
+        margin-bottom: 10px
+        // margin-top: 0px
       p 
-        font-size: 8px
+        display: none
+        // font-size: 8px
       &__circle
         flex-direction: column
         align-items: center
@@ -769,14 +787,24 @@ $circle-5_percent: $circle_num-zero - 30%
             width: 35px
             height: 35px     
     &__certification
-      display: none
+      h1 
+        font-size: 16px
+        margin-bottom: 10px
+        margin-top: 10px
+      &__item
+        button
+          width: 200px
+          height: 35px
+          margin: 0
+      // display: none
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
   .skill
     &__ability
       h1
         font-size: 18px
-      p 
+      h2, p 
+        // display: none
         font-size: 10px
       &__circle
         &__block
@@ -794,6 +822,7 @@ $circle-5_percent: $circle_num-zero - 30%
       h1 
         font-size: 18px
       p 
+        // display: none
         font-size: 10px
       &__circle
         align-items: center
@@ -836,18 +865,22 @@ $circle-5_percent: $circle_num-zero - 30%
             width: 55px
             height: 55px     
     &__certification
-      // display: none
-      display: flex
-      flex-direction: column
-      align-items: center
-      width: 100%
+      h1 
+        font-size: 18px
       &__item
-        width: 80%
-        display: flex
-        justify-content: space-around
-        p 
-          font-size: 12px
-          font-family: 'Roboto', sans-serif
+        button
+      // // display: none
+      // display: flex
+      // flex-direction: column
+      // align-items: center
+      // width: 100%
+      // &__item
+      //   width: 80%
+      //   display: flex
+      //   justify-content: space-around
+      //   p 
+      //     font-size: 12px
+      //     font-family: 'Roboto', sans-serif
 
 .work 
   display: flex
