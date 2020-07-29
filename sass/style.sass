@@ -661,9 +661,6 @@ $circle-5_percent: $circle_num-zero - 30%
         margin-top: 0
       h2, p 
         display: none
-      // p 
-      //   display: none
-        // font-size: 8px
       &__circle
         &__block
           margin: 1%
@@ -682,7 +679,6 @@ $circle-5_percent: $circle_num-zero - 30%
         margin-top: 0
       p 
         display: none
-        // font-size: 8px
       &__circle
         flex-direction: column
         align-items: center
@@ -719,7 +715,6 @@ $circle-5_percent: $circle_num-zero - 30%
         font-size: 16px
       &__item
         button
-      // display: none
 
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px)
@@ -729,11 +724,9 @@ $circle-5_percent: $circle_num-zero - 30%
       h1
         font-size: 16px
         margin-bottom: 10px
-        // margin-top: 0px
       h2 
         display: none
       p 
-        // display: none
         font-size: 8px
       &__circle
         &__block
@@ -889,7 +882,7 @@ $circle-5_percent: $circle_num-zero - 30%
   margin: 0
   height: 100vh
   background-color: $black
-  h4 
+  h1 
     margin: 4% 0
     color: $white
     font-size: 20px
@@ -945,58 +938,83 @@ $circle-5_percent: $circle_num-zero - 30%
           font-size: 20px
           font-family: 'Roboto', sans-serif
           text-transform: uppercase
+.swiper-container
+  width: 0
+  height: 0
+  opacity: 0
 
-@media only screen and (max-width: 320px)
+@media only screen and (max-width: 319px)
   .work 
-    h4 
-      font-size: 14px
+    display: flex
+    align-items: center
+    justify-content: center
+    h1 
+      display: none
     &__wrapper
-      flex-direction: column 
-      &__item
-        #square-1, #square-2, #square-3
-          width: 100px
-          height: 120px
-          border-radius: 35px
-        .in-square
-        &__projects-name
-          h1 
-            font-size: 10px
-
+      display: none
+  .swiper-container
+    opacity: 1
+    width: 450px
+    height: 500px
+  .swiper-slide
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 40px
+    width: 300px
+    height: 450px
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px)
   .work 
-    h4 
+    display: flex
+    align-items: center
+    justify-content: center
+    h1 
       font-size: 16px
     &__wrapper
-      flex-direction: column 
-      &__item
-        #square-1, #square-2, #square-3
-          width: 110px
-          height: 130px
-          border-radius: 35px
-        .in-square
-        &__projects-name
-          h1 
-            font-size: 10px
-
+      display: none
+  .swiper-container
+    opacity: 1
+    width: 320px
+    height: 520px
+  .swiper-slide
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 40px
+    width: 300px
+    height: 450px
+  img 
+    border-radius: 80px
+  .swiper-button-prev::after, .swiper-button-next::after
+    color: #f0f0f0
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
   .work 
-    justify-content: center
-    h4 
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    h1 
       font-size: 18px
     &__wrapper
-      flex-direction: row
-      &__item
-        #square-1, #square-2, #square-3
-          width: 180px
-          height: 240px
-          border-radius: 45px
-        .in-square
-        &__projects-name
-          h1 
-            font-size: 10px
+      display: none             
+  .swiper-container
+    opacity: 1
+    width: 600px
+    height: 650px
+  .swiper-slide
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 40px
+    width: 450px
+    height: 550px
+  img 
+    border-radius: 80px
+  .swiper-button-prev::after, .swiper-button-next::after
+    color: #f0f0f0
 
+  
 .contact 
   display: flex
   flex-direction: column
