@@ -1,0 +1,242 @@
+@import './colors'
+
+header
+  display: flex
+  flex-direction: column
+  margin: 0
+  height: 100vh
+  background: url(../img/sung-jin-cho-ZsA3DknVxRc-unsplash.jpg) no-repeat center center fixed
+  background-size: cover
+  a 
+    margin: 0 auto
+  .header 
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 95vh
+    &__arrow-down
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      position: relative
+      animation: bouncearrow 2s infinite
+    &__wrapper
+      display: flex
+      align-items: center
+      padding: 50px
+      color: white
+      &__logo
+        width: 100%
+        height: 100%
+      &__menu
+        display: flex
+        &__block
+          display: flex
+          justify-content: center
+          .menu-nav
+            transition: 0.5s
+            transform-origin: right center
+            transform: scaleX(0) translateX(20%)
+            opacity: 0
+            &__link
+              display: inline-block
+              margin-right: 20px
+              text-decoration: none
+              color: $red
+              font-size: 18px
+              font-family: 'Noto Serif', serif
+            &__active
+              display: flex
+              align-items: center
+              transform: scaleX(1) translateX(0%)
+              opacity: 1
+        .menu-button
+          display: flex
+          flex-direction: column
+          justify-content: space-around
+          &__bento
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            &__wrraper
+              display: flex
+              justify-content: space-around
+              .dot
+                top: 50%
+                left: 50%
+                width: 10px
+                height: 10px
+                background-color: $red
+                border-radius: 10px
+                margin: 3px
+  .header-text
+    display: flex
+    flex-direction: column
+    padding: 0
+    margin-bottom: 30px
+    h1 
+      padding-left: 140px
+      margin-bottom: 0
+      color: $white
+      font-size: 75px
+      font-family: 'Noto Serif', serif
+    p 
+      margin-left: 140px
+      margin-top: 0
+      color: $red
+      font-size: 23px 
+      font-family: 'Noto Serif', serif
+  .header-media
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-end
+    padding: 50px
+    padding-left: 0
+    padding-bottom: 17px  
+    p 
+      color: $white
+      font-size: 23px
+      transform: rotate(-90deg)
+      margin-bottom: 80px
+    &__img
+      display: flex
+      justify-content: space-between
+      width: 150px
+      .icon-telegram, .icon-gmail, .icon-instagram
+        color: $white
+        font-size: 30px
+      .icon-telegram:hover
+        color: $red;
+      .icon-gmail:hover 
+        color: $red;
+      .icon-instagram:hover
+        color: $red;
+  @keyframes bouncearrow 
+    0%
+      top: 0px
+    50%
+      top: 35px
+    100%
+      top: 0px
+
+@media only screen and (max-width: 320px)
+  header
+    .header
+      &__wrapper
+        padding: 20px
+        img 
+          width: 40px
+          height: 40px
+        &__logo
+          width: 50%
+          height: 50%
+        &__menu
+          &__block
+            width: 100px
+            .menu-nav 
+              a 
+                font-size: 10px
+          .menu-button
+            display: none
+            &__bento
+              &__wrapper
+                .dot 
+                  width: 5px
+                  height: 5px         
+    .header-text
+      padding-bottom: 150px
+      h1 
+        font-size: 40px
+        padding-left: 30px
+      p 
+        font-size: 10px
+        margin-left: 30px
+    .header-media
+      display: none
+
+@media only screen and (min-device-width: 321px) and (max-device-width: 767px)
+  header
+    .header
+      &__wrapper
+        padding: 20px
+        img 
+          width: 45px
+          height: 45px
+        &__logo
+          width: 50%
+          height: 50%
+        &__menu
+          &__block
+            width: 100px
+            .menu-nav 
+              a 
+                font-size: 10px
+          .menu-button
+            display: none
+            &__bento
+              &__wrapper
+                .dot 
+                  width: 5px
+                  height: 5px      
+    .header-text
+      padding-bottom: 100px
+      h1 
+        font-size: 45px
+        padding-left: 30px
+      p 
+        font-size: 15px
+        margin-left: 30px
+    .header-media
+      padding: 25px
+      justify-content: flex-end 
+      p 
+        font-size: 15px
+        display: none
+      &__img
+        width: 100px
+        .icon-telegram, .icon-gmail, .icon-instagram
+          font-size: 28px
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+  header
+    .header
+      &__wrapper
+        padding: 20px
+        img 
+          width: 45px
+          height: 45px
+        &__logo
+          width: 50%
+          height: 50%
+        &__menu
+          &__block
+            width: 100px
+            .menu-nav 
+              a 
+                font-size: 10px
+          .menu-button
+            display: none
+            &__bento
+              &__wrapper
+                .dot 
+                  width: 5px
+                  height: 5px      
+    .header-text
+      padding-bottom: 150px
+      h1 
+        font-size: 55px
+        padding-left: 70px
+      p 
+        font-size: 20px
+        margin-left: 70px
+    .header-media
+      padding: 25px
+      justify-content: flex-end 
+      p 
+        font-size: 15px
+        display: none
+      &__img
+        width: 100px
+        .icon-telegram, .icon-gmail, .icon-instagram
+          font-size: 28px 
