@@ -25,46 +25,46 @@
     margin: 25px
     height: 90%
     width: 90%
-    &__item 
+  &__item 
+    display: flex
+    justify-content: space-around
+    width: 85%
+    height: 65%
+    align-items: center
+  &__block
+    display: flex
+    flex-direction: column
+  &__elements 
+    display: flex
+    align-items: center
+    margin: 20px 0
+    a 
+      text-decoration: none
+    i 
       display: flex
-      justify-content: space-around
-      width: 85%
-      height: 65%
+      justify-content: center
       align-items: center
-      &__block
-        display: flex
-        flex-direction: column
-        &__elements 
-          display: flex
-          align-items: center
-          margin: 20px 0
-          a 
-            text-decoration: none
-          i 
-            display: flex
-            justify-content: center
-            align-items: center
-            color: $red
-            font-size: 35px
-            background-color: $white
-            border-radius: 50px
-            width: 75px
-            height: 75px
-            margin: 0 auto  
-          &__text 
-            display: flex
-            flex-direction: column
-            align-items: center
-            width: 310px
-            height: 95px 
-            p  
-              color: $red
-              font-size: 18px
-              font-family: 'Roboto', sans-serif
-            span 
-              color: $white
-              font-size: 15px
-              font-family: 'Roboto', sans-serif
+      color: $red
+      font-size: 35px
+      background-color: $white
+      border-radius: 50px
+      width: 75px
+      height: 75px
+      margin: 0 auto  
+  &__text 
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 310px
+    height: 95px 
+    p  
+      color: $red
+      font-size: 18px
+      font-family: 'Roboto', sans-serif
+    span 
+      color: $white
+      font-size: 15px
+      font-family: 'Roboto', sans-serif
 
 
 @media only screen and (max-width: 320px)
@@ -76,27 +76,27 @@
     &__wrapper
       height: 95%
       border: 3px solid $red
-      &__item
-        flex-direction: column
-        margin-top: 50px
-        align-items: flex-end
-        justify-content: center
-        &__block
-          &__elements
-            width: 210px
-            height: 60px
-            margin: 10px
-            i 
-              width: 40px
-              height: 40px
-              font-size: 20px
-            &__text
-              justify-content: center
-              p 
-                font-size: 10px
-                margin-top: 0 
-              span 
-                font-size: 8px
+    &__item
+      flex-direction: column
+      margin-top: 50px
+      align-items: flex-end
+      justify-content: center
+    &__block
+    &__elements
+      width: 210px
+      height: 60px
+      margin: 10px
+      i 
+        width: 40px
+        height: 40px
+        font-size: 20px
+    &__text
+      justify-content: center
+      p 
+        font-size: 10px
+        margin-top: 0 
+      span 
+        font-size: 8px
 
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px)
@@ -109,30 +109,30 @@
       height: 95%
       border: 3px solid $red
       margin: 18px
-      &__item
-        flex-direction: column
-        margin-top: 50px
-        align-items: center
-        justify-content: center
-        &__block
-          &__elements
-            width: 270px
-            height: 60px
-            margin: 10px
-            display: flex
-            align-items: center
-            i 
-              width: 45px
-              height: 45px
-              font-size: 20px
-              margin: 20px
-            &__text
-              justify-content: center
-              p 
-                font-size: 12px
-                margin: 0
-              span 
-                font-size: 10px 
+    &__item
+      flex-direction: column
+      margin-top: 50px
+      align-items: center
+      justify-content: center
+    &__block
+    &__elements
+      width: 270px
+      height: 60px
+      margin: 10px
+      display: flex
+      align-items: center
+      i 
+        width: 45px
+        height: 45px
+        font-size: 20px
+        margin: 20px
+    &__text
+      justify-content: center
+      p 
+        font-size: 12px
+        margin: 0
+      span 
+        font-size: 10px 
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
   .contact
@@ -144,27 +144,27 @@
       height: 95%
       border: 3px solid $red
       margin: 24px
-      &__item
-        flex-direction: column
-        margin-top: 50px
-        align-items: center
-        justify-content: center
-        &__block
-          &__elements
-            width: 270px
-            height: 60px
-            margin: 15px
-            display: flex
-            align-items: center
-            i 
-              width: 50px
-              height: 50px
-              font-size: 20px
-              margin: 20px
-            &__text
-              justify-content: center
-              p 
-                font-size: 14px
-                margin: 0
-              span 
-                font-size: 10px
+    &__item
+      flex-direction: column
+      margin-top: 50px
+      align-items: center
+      justify-content: center
+    &__block
+    &__elements
+      width: 270px
+      height: 60px
+      margin: 15px
+      display: flex
+      align-items: center
+      i 
+        width: 50px
+        height: 50px
+        font-size: 20px
+        margin: 20px
+    &__text
+      justify-content: center
+      p 
+        font-size: 14px
+        margin: 0
+      span 
+        font-size: 10px
