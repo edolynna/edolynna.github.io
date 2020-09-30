@@ -32,78 +32,66 @@
       background: url("../img/ed.jpg") no-repeat center center / cover
       overflow: hidden
       box-shadow: 4px 4px 4px rgba(240, 240, 240, 0.100)
-    #square-2
-      background: url("../img/cactus.png")no-repeat center center / cover
       .in-square
         position: relative
         width: 300px
         height: 450px
-        // background-color: rgba(214, 52, 71, 0.880)
+    #square-2
+      background: url("../img/cactus.png")no-repeat center center / cover
     #square-3
       background: url("../img/greenplanet.jpg") no-repeat center center / cover
       .in-square
-        position: relative
-        width: 300px
-        height: 450px
         background-color: rgba(214, 52, 71, 0.880)
   &__projects-name 
     display: flex
     h1
       font-size: 20px
-      // text-transform: uppercase
-.swiper-container
-  width: 0
-  height: 0
-  opacity: 0
-
-@media only screen and (max-width: 319px)
-  .work 
-    display: flex
-    align-items: center
-    justify-content: center
-    h1 
-      display: none
-    &__wrapper
-      display: none
-  .swiper-container
-    opacity: 1
-    width: 450px
-    height: 500px
-  .swiper-slide
-    display: flex
-    justify-content: center
-    align-items: center
-    font-size: 40px
-    width: 300px
-    height: 450px
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px)
-  .work 
-    display: flex
-    align-items: center
-    justify-content: center
-    h1 
-      font-size: 16px
-    &__wrapper
-      display: none
-  .swiper-container
-    opacity: 1
-    width: 320px
-    height: 520px
-  .swiper-slide
-    display: flex
-    justify-content: center
-    align-items: center
-    font-size: 40px
-    width: 300px
-    height: 450px
-  img 
-    border-radius: 80px
-  .swiper-button-prev::after, .swiper-button-next::after
-    color: #f0f0f0
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
-  .work 
+  @media (max-width: $phone)
+    .work 
+      display: flex
+      align-items: center
+      justify-content: center
+      h1 
+        display: none
+      &__wrapper
+        display: none
+      .swiper-container
+        opacity: 1
+        width: 450px
+        height: 500px
+      .swiper-slide
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 40px
+        width: 300px
+        height: 450px
+  @media (max-width: $tablet) and (min-width: $phone) 
+    .work 
+      display: flex
+      align-items: center
+      justify-content: center
+      h1 
+        font-size: 16px
+      &__wrapper
+        display: none
+      .swiper-container
+        opacity: 1
+        width: 320px
+        height: 520px
+      .swiper-slide
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 40px
+        width: 300px
+        height: 450px
+      img 
+        border-radius: 80px
+      .swiper-button-prev::after, .swiper-button-next::after
+        color: $white
+  @media (max-width: $laptop) and (min-width: $tablet) 
+    .work 
     display: flex
     align-items: center
     justify-content: flex-start
@@ -111,18 +99,24 @@
       font-size: 18px
     &__wrapper
       display: none             
-  .swiper-container
-    opacity: 1
-    width: 600px
-    height: 650px
-  .swiper-slide
-    display: flex
-    justify-content: center
-    align-items: center
-    font-size: 40px
-    width: 450px
-    height: 550px
-  img 
-    border-radius: 80px
-  .swiper-button-prev::after, .swiper-button-next::after
-    color: #f0f0f0
+    .swiper-container
+      opacity: 1
+      width: 600px
+      height: 650px
+    .swiper-slide
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 40px
+      width: 450px
+      height: 550px
+    img 
+      border-radius: 80px
+    .swiper-button-prev::after, .swiper-button-next::after
+      color: $white
+.swiper-container
+  width: 0
+  height: 0
+  opacity: 0
+
+
