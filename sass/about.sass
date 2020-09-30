@@ -72,14 +72,9 @@
       &:hover 
         color: $red
         transform: scale(1.1)
-
-@media only screen and (max-width: 320px)
-  .about 
-    &__content
-    &__wrapper
+  @media (max-width: $phone)
     &__photo 
       display: none
-    &__me 
     &__text
       width: 100%
       h1 
@@ -87,21 +82,16 @@
     &__p1, &__p2
       p 
         font-size: 12px
-    &__information
     &__wrapper_icon
       .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
         font-size: 11px
       span
         font-size: 12px
-
-@media only screen and (min-device-width: 321px) and (max-device-width: 767px)
-  .about 
+  @media (max-width: $tablet) and (min-width: $phone)
     &__content
       width: 100%
-    &__wrapper
     &__photo 
       display: none
-    &__me 
     &__text
       width: 100%
       h1 
@@ -110,22 +100,16 @@
       p 
         font-size: 11px
         width: 100%
-    &__information
     &__wrapper_icon
       .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
-        // color: $white
         font-size: 11px
       span
         font-size: 11px
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
-  .about 
+  @media (max-width: $laptop) and (min-width: $tablet)
     &__content
       width: 100%
-    &__wrapper
     &__photo 
       display: none
-    &__me 
     &__text
       width: 100%
       h1 
@@ -134,10 +118,8 @@
       p 
         font-size: 16px
         width: 100%
-    &__information
     &__wrapper_icon
       .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
         font-size: 22px
       span
-          font-size: 16px  
-
+        font-size: 16px

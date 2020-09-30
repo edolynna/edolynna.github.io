@@ -116,10 +116,7 @@ header
         top: 35px
       100%
         top: 0px
-
-@media only screen and (max-width: 320px)
-  header
-    .header
+    @media (max-width: $phone)
       &__wrapper
         padding: 20px
         img 
@@ -128,7 +125,6 @@ header
       &__logo
         width: 50%
         height: 50%
-      &__menu
       &__block
         width: 100px
       &__menu-nav 
@@ -136,7 +132,6 @@ header
           font-size: 10px
       &__menu-button
         display: none
-      &__bento
       &__wrapper_bento
         .dot 
           width: 5px
@@ -151,10 +146,7 @@ header
           margin-left: 30px
       &__media
         display: none
-
-@media only screen and (min-device-width: 321px) and (max-device-width: 767px)
-  header
-    .header
+    @media (max-width: $tablet) and (min-width: $phone)
       &__wrapper
         padding: 20px
         img 
@@ -163,7 +155,6 @@ header
       &__logo
         width: 50%
         height: 50%
-      &__menu
       &__block
         width: 100px
       &__menu-nav 
@@ -171,7 +162,6 @@ header
           font-size: 10px
       &__menu-button
         display: none
-      &__bento
       &__wrapper_bento
         .dot 
           width: 5px
@@ -194,27 +184,21 @@ header
         width: 100px
         .icon-telegram, .icon-gmail, .icon-instagram
           font-size: 28px
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
-  header
-    .header
+    @media (max-width: $laptop) and (min-width: $tablet)
       &__wrapper
         padding: 20px
+        justify-content: space-between
         img 
           width: 45px
           height: 45px
       &__logo
         width: 50%
         height: 50%
-      &__menu
       &__block
         width: 100px
       &__menu-nav 
         a 
           font-size: 10px
-      &__menu-button
-        display: none
-      &__bento
       &__wrapper_bento
         .dot 
           width: 5px
@@ -236,5 +220,4 @@ header
       &__img
         width: 100px
         .icon-telegram, .icon-gmail, .icon-instagram
-          font-size: 28px 
-          
+          font-size: 28px
