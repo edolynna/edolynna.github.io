@@ -7,6 +7,7 @@ header
   height: 100vh
   background: url(../img/sung-jin-cho-ZsA3DknVxRc-unsplash.jpg) no-repeat center center fixed
   background-size: cover
+  color: $white
   a 
     margin: 0 auto
   .header 
@@ -24,7 +25,6 @@ header
       display: flex
       align-items: center
       padding: 50px
-      color: white
     &__logo
       width: 100%
       height: 100%
@@ -74,18 +74,16 @@ header
       flex-direction: column
       padding: 0
       margin-bottom: 30px
+      font-family: 'Noto Serif', serif
       h1 
         padding-left: 140px
         margin-bottom: 0
-        color: $white
         font-size: 75px
-        font-family: 'Noto Serif', serif
       p 
         margin-left: 140px
         margin-top: 0
         color: $red
         font-size: 23px 
-        font-family: 'Noto Serif', serif
     &__media
       display: flex
       flex-direction: row
@@ -95,7 +93,6 @@ header
       padding-left: 0
       padding-bottom: 17px  
       p 
-        color: $white
         font-size: 23px
         transform: rotate(-90deg)
         margin-bottom: 80px
@@ -104,9 +101,9 @@ header
       justify-content: space-between
       width: 150px
       .icon-telegram, .icon-gmail, .icon-instagram
-        color: $white
         font-size: 30px
         transition: 0.5s ease
+        color: $white
       .icon-telegram:hover, .icon-gmail:hover, .icon-instagram:hover
         color: $red
         // transition: 0.5s ease
