@@ -20,40 +20,40 @@
   &__me 
     display: flex
     img
-      width: 450px
-      height: 450px
+      width: 28.125em
+      height: 28.125em
       display: flex
       z-index: 999999
     .border-solid
-      width: 400px
-      height: 400px
+      width: 25em
+      height: 25em
       z-index: 1
-      border: 5px solid $red
+      border: 0.3125em solid $red
       position: absolute
-      margin: 60px
+      margin: 3.75em
     .border-dotted
-      width: 430px
-      height: 430px
+      width: 26.875em
+      height: 26.875em
       z-index: 1
-      border: 5px dotted $red
+      border: 0.3125em dotted $red
       position: absolute
-      margin: 45px
+      margin: 2.8125em
   &__text
     display: flex
     flex-direction: column
     justify-content: space-between
-    height: 400px 
+    height: 25em
     width: 50%
     h1 
-      font-size: 20px
+      font-size: 1.25em
       text-transform: uppercase
       text-align: center 
   &__p1,  &__p2  
     p 
-      font-size: 18px
+      font-size: 1.125em
       text-align: center
     span 
-      font-size: 18px
+      font-size: 1.125em
   &__information
     display: flex
     justify-content: space-between
@@ -62,12 +62,12 @@
     justify-content: space-between
     align-items: flex-end
     &:nth-child(2) i 
-      margin-right: 6px
+      margin-right: 0.375em
     span
-      font-size: 18px
+      font-size: 1.125em
       // font-family: 'Roboto', sans-serif
     .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
-      font-size: 30px
+      font-size: 1.875em
       transition: 0.5s ease
       &:hover 
         color: $red
@@ -78,15 +78,15 @@
     &__text
       width: 100%
       h1 
-        font-size: 14px
+        font-size: 0.875em
     &__p1, &__p2
       p 
-        font-size: 12px
+        font-size: 0.75em
     &__wrapper_icon
       .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
-        font-size: 11px
+        font-size: 0.6875em
       span
-        font-size: 12px
+        font-size: 0.75em
   @media (max-width: $tablet) and (min-width: $phone)
     &__content
       width: 100%
@@ -95,16 +95,16 @@
     &__text
       width: 100%
       h1 
-        font-size: 16px
+        font-size: 1em
     &__p1, &__p2
       p 
-        font-size: 11px
+        font-size: 0.6875em
         width: 100%
     &__wrapper_icon
       .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
-        font-size: 11px
+        font-size: 0.6875em
       span
-        font-size: 11px
+        font-size: 0.6875em
   @media (max-width: $laptop) and (min-width: $tablet)
     &__content
       width: 100%
@@ -113,13 +113,13 @@
     &__text
       width: 100%
       h1 
-        font-size: 18px
+        font-size: 1.125em
     &__p1, &__p2
       p 
-        font-size: 16px
+        font-size: 1em
         width: 100%
     &__wrapper_icon
       .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
-        font-size: 22px
+        font-size: 1.375em
       span
-        font-size: 16px
+        font-size: 1em
