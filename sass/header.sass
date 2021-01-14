@@ -9,6 +9,7 @@ header
   background: url(../img/background-ed.jpg) no-repeat center center fixed
   background-size: cover
   color: $white
+  font-family: 'Noto Serif', serif
   a 
     margin: 0 auto
   .header 
@@ -25,10 +26,8 @@ header
     &__wrapper
       display: flex
       align-items: center
+      justify-content: space-between
       padding: 3.125em
-    &__logo
-      width: 100%
-      height: 100%
     &__menu
       display: flex
     &__block
@@ -45,7 +44,6 @@ header
       text-decoration: none
       color: $red
       font-size: 1.125em
-      font-family: 'Noto Serif', serif
     &__menu-nav_active
       display: flex
       align-items: center
@@ -73,17 +71,15 @@ header
     &__text
       display: flex
       flex-direction: column
-      padding: 0
-      margin-bottom: 3.75em
+      margin-bottom: 5em
       margin-left: 8.75em
-      font-family: 'Noto Serif', serif
       h1 
         margin-bottom: 0
-        font-size: 4.6875em
+        font-size: 6em
       p 
         margin-top: 0
         color: $red
-        font-size: 1.4375em
+        font-size: 1.5em
     &__media
       display: flex
       flex-direction: row
@@ -93,9 +89,10 @@ header
       padding-left: 0
       padding-bottom: 1.625em
       p 
-        font-size: 1.4375em
+        font-size: 1em
         transform: rotate(-90deg)
         margin-bottom: 3em
+        margin-left: 10px
     &__img
       display: flex
       justify-content: space-between
@@ -115,108 +112,50 @@ header
         top: 2.1875em
       100%
         top: 0
-    @media (max-width: $phone)
-      &__wrapper
-        padding: 1.25em
-        img 
-          width: 2.5em
-          height: 2.5em
-      &__logo
-        width: 50%
-        height: 50%
+
+@media (min-width: 768px) and (max-width: 1023px)
+  header
+    .header  
       &__block
         width: 6.25em
       &__menu-nav 
         a 
-          font-size: 0.625em
-      &__menu-button
-        display: none
-      &__wrapper_bento
-        .dot 
-          width: 0.3125em
-          height: 0.3125em         
+          font-size: 0.625em    
       &__text
-        padding-bottom: 9.375em
         h1 
-          font-size: 2.5em
-          padding-left: 1.875em
+          font-size: 4em 
         p 
-          font-size: 0.625em
-          margin-left: 1.875em
-      &__media
-        display: none
-    @media (max-width: $tablet) and (min-width: $phone)
-      &__wrapper
-        padding: 1.25em
-        img 
-          width: 2.8125em
-          height: 2.8125em
-      &__logo
-        width: 50%
-        height: 50%
-      &__block
-        width: 6.25em
-      &__menu-nav 
-        a 
-          font-size: 0.625em
-      &__menu-button
-        display: none
-      &__wrapper_bento
-        .dot 
-          width: 0.3125em
-          height: 0.3125em      
-      &__text
-        padding-bottom: 6.25em
-        h1 
-          font-size: 2.8125em
-          padding-left: 1.875em
-        p 
-          font-size: 0.9375em
-          margin-left: 1.875em
+          font-size: 1.4em
       &__media
         padding: 1.5625em
-        justify-content: flex-end 
         p 
           font-size: 0.9375em
-          display: none
       &__img
-        width: 6.25em
         .icon-telegram, .icon-gmail, .icon-instagram
           font-size: 1.75em
-    @media (max-width: $laptop) and (min-width: $tablet)
+
+@media (min-width: 375px) and (max-width: 787px)
+  header
+    .header  
       &__wrapper
-        padding: 1.25em
-        justify-content: space-between
-        img 
-          width: 2.8125em
-          height: 2.8125em
-      &__logo
-        width: 50%
-        height: 50%
+        padding: 2em
       &__block
         width: 6.25em
       &__menu-nav 
         a 
-          font-size: 0.625em
-      &__wrapper_bento
-        .dot 
-          width: 0.3125em
-          height: 0.3125em      
+          font-size: 0.625em    
       &__text
-        padding-bottom: 9.375em
+        margin-left: 5.5em
+        margin-bottom: 8em
         h1 
-          font-size: 3.4375em
-          padding-left: 4.375em
+          font-size: 3em 
         p 
-          font-size: 1.25em
-          margin-left: 4.375em
+          font-size: 1em
       &__media
-        padding: 1.5625em
-        justify-content: flex-end 
+        padding: 1em
         p 
           font-size: 0.9375em
-          display: none
+          margin-left: -1em
       &__img
-        width: 6.25em
         .icon-telegram, .icon-gmail, .icon-instagram
           font-size: 1.75em
