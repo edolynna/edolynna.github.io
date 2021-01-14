@@ -16,7 +16,6 @@
     align-items: center
     justify-content: space-around
     width: 90%
-  &__photo
   &__me 
     display: flex
     img
@@ -72,40 +71,39 @@
       &:hover 
         color: $red
         transform: scale(1.2)
-  @media (max-width: $phone)
-    &__photo 
-      display: none
-    &__text
-      width: 100%
-      h1 
-        font-size: 0.875em
-    &__p1, &__p2
-      p 
-        font-size: 0.75em
-    &__wrapper_icon
-      .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
-        font-size: 0.6875em
-      span
-        font-size: 0.75em
-  @media (max-width: $tablet) and (min-width: $phone)
+
+@media (min-width: 1024px) and (max-width: 1439px)
+  .about  
     &__content
       width: 100%
-    &__photo 
-      display: none
-    &__text
+    &__wrapper
       width: 100%
+    &__me 
+      img
+        width: 22.8125em
+        height: 22.8125em
+      .border-solid
+        width: 20em
+        height: 20em
+      .border-dotted 
+        width: 22em
+        height: 22em  
+    &__text
+      // width: 100%
       h1 
-        font-size: 1em
+        font-size: 1.125em
     &__p1, &__p2
       p 
-        font-size: 0.6875em
-        width: 100%
+        font-size: 0.8em
+        // width: 100%
     &__wrapper_icon
       .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
-        font-size: 0.6875em
+        font-size: 1.375em
       span
-        font-size: 0.6875em
-  @media (max-width: $laptop) and (min-width: $tablet)
+        font-size: 0.8em
+
+@media (min-width: 768px) and (max-width: 1023px)
+  .about  
     &__content
       width: 100%
     &__photo 
@@ -123,3 +121,20 @@
         font-size: 1.375em
       span
         font-size: 1em
+
+@media (min-width: 375px) and (max-width: 767px)
+  .about
+    &__photo 
+      display: none
+    &__text
+      width: 100%
+      h1 
+        font-size: 0.875em
+    &__p1, &__p2
+      p 
+        font-size: 0.75em
+    &__wrapper_icon
+      .icon-map-marker-alt-solid, .icon-id-card-solid, .icon-user-graduate-solid
+        font-size: 0.6875em
+      span
+        font-size: 0.75em
