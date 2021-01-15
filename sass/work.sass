@@ -46,77 +46,76 @@
     display: flex
     h1
       font-size: 1.25em
-  @media (max-width: $phone)
-    .work 
-      display: flex
-      align-items: center
-      justify-content: center
-      h1 
-        display: none
-      &__wrapper
-        display: none
-      .swiper-container
-        opacity: 1
-        width: 28.125em
-        height: 31.25em
-      .swiper-slide
-        display: flex
-        justify-content: center
-        align-items: center
-        font-size: 2.5em
-        width: 18.75em
-        height: 28.125em
-  @media (max-width: $tablet) and (min-width: $phone) 
-    .work 
-      display: flex
-      align-items: center
-      justify-content: center
-      h1 
-        font-size: 1em
-      &__wrapper
-        display: none
-      .swiper-container
-        opacity: 1
-        width: 20em
-        height: 32.5em
-      .swiper-slide
-        display: flex
-        justify-content: center
-        align-items: center
-        font-size: 2.5em
-        width: 18.75em
-        height: 28.125em
-      img 
-        border-radius: 5em
-      .swiper-button-prev::after, .swiper-button-next::after
-        color: $white
-  @media (max-width: $laptop) and (min-width: $tablet) 
-    .work 
-    display: flex
-    align-items: center
+  .swiper-container 
+    width: 0
+    height: 0
+    opacity: 0
+    
+@media (min-width: 768px) and (max-width: 1023px)
+  .work 
     justify-content: flex-start
     h1 
       font-size: 1.125em
+    img 
+      border-radius: 5em
     &__wrapper
       display: none             
     .swiper-container
-      opacity: 1
       width: 37.5em
       height: 40.625em
+      opacity: 1
     .swiper-slide
       display: flex
       justify-content: center
       align-items: center
-      font-size: 2.5em
-      width: 28.125em
-      height: 34.375em
+      width: 600px
+      height: 600px
+    .swiper-button-prev::after, .swiper-button-next::after
+      color: $white
+
+@media (min-width: 375px) and (max-width: 767px)
+  .work 
+    justify-content: center
+    h1 
+      font-size: 1em
+    &__wrapper
+      display: none
+    .swiper-container
+      opacity: 1
+      width: 24em
+      height: 32.5em
+    .swiper-slide
+      display: flex
+      justify-content: center
+      width: 280px
+      height: 280px
     img 
       border-radius: 5em
     .swiper-button-prev::after, .swiper-button-next::after
       color: $white
-.swiper-container
-  width: 0
-  height: 0
-  opacity: 0
+
+
+  // @media (max-width: $phone)
+  //   .work 
+  //     display: flex
+  //     align-items: center
+  //     justify-content: center
+  //     h1 
+  //       display: none
+  //     &__wrapper
+  //       display: none
+  //     .swiper-container
+  //       opacity: 1
+  //       width: 28.125em
+  //       height: 31.25em
+  //     .swiper-slide
+  //       display: flex
+  //       justify-content: center
+  //       align-items: center
+  //       font-size: 2.5em
+  //       width: 18.75em
+  //       height: 28.125em
+
+
 
 
