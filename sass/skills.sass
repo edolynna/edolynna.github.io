@@ -1,37 +1,5 @@
 @import './colors'
 
-$circle_num-zero: -27%
-$circle-1_percent: $circle_num-zero - 35%
-$circle-2_percent: $circle_num-zero - 15%
-$circle-3_percent: $circle_num-zero - 17%
-$circle-4_percent: $circle_num-zero - 10%
-$circle-5_percent: $circle_num-zero - 30%
-
-@keyframes spin-circle-1
-  0%
-    transform: translateY(-25%) rotate(0deg)
-  100%
-    transform: translateY($circle-1_percent) rotate(400deg)
-@keyframes spin-circle-2
-  0%
-    transform: translateY(-25%) rotate(0deg)
-  100%
-    transform: translateY($circle-2_percent) rotate(400deg)
-@keyframes spin-circle-3
-  0%
-    transform: translateY(-25%) rotate(0deg)
-  100%
-    transform: translateY($circle-3_percent) rotate(400deg)
-@keyframes spin-circle-4
-  0%
-    transform: translateY(-25%) rotate(0deg)
-  100%
-    transform: translateY($circle-4_percent) rotate(400deg)
-@keyframes spin-circle-5
-  0%
-    transform: translateY(-25%) rotate(0deg)
-  100%
-    transform: translateY($circle-5_percent) rotate(500deg)
 
 .skill 
   display: flex
@@ -43,91 +11,6 @@ $circle-5_percent: $circle_num-zero - 30%
   background-color: $black
   font-family: 'Roboto', sans-serif
   color: $white
-  &__ability
-    display: flex
-    flex-direction: column
-    align-items: center
-    h1 
-      margin: 0
-      font-size: 1.25em
-      text-transform: uppercase
-    p
-      font-size: 0.75em
-  &__circle
-    display: flex
-    justify-content: space-around
-    width: 60%
-  &__block
-    text-align: center
-    margin: 5%
-    p
-      font-size: 1.125em
-  &__item
-    display: flex
-    justify-content: center
-    align-items: flex-end
-    background-color: $white
-    border-radius: 50%
-    width: 7.1875em
-    height: 7.1875em
-    overflow: hidden
-    border: 0.25rem solid $black
-  &__content
-    display: flex
-    justify-content: center
-    align-items: center
-    width: 100%
-    background-color: $red
-    position: relative
-    outline: 0
-    overflow: hidden
-    p 
-      margin: 0
-    span 
-      color: $black
-      font-size: 1.4375em
-      width: 100%
-      z-index: 1000
-  &__content::before
-    content: ""
-    font-size: 1.25em
-    width: 0.625em
-    height: 115px
-    display: flex
-    align-items: center
-    justify-content: center
-  &__content::after
-    content: ""
-    position: absolute
-    bottom: -50%
-    left: -50%
-    width: 200%
-    height: 200%
-    background-color: $white
-    border-radius: 45%
-    animation: spin-circle-1 5s ease-in-out forwards
-    // &:nth-child(1)
-    //   // &__item
-    //     // &__content::after
-    //   animation: spin-circle-1 5s ease-in-out forwards
-    // &:nth-child(2)
-    //   // &__item
-    //     .skill__content::after
-    //       animation: spin-circle-2 5s ease-in-out forwards
-    // &:nth-child(3)
-    //   .skill__item
-    //     &__content::after
-    //       animation: spin-circle-3 5s ease-in-out forwards
-    // &:nth-child(4)
-    //   .skill__item
-    //     &__content::after
-    //       animation: spin-circle-4 5s ease-in-out forwards
-    // &:nth-child(5)
-    //   .skill__item
-    //     &__content::after
-    //       animation: spin-circle-5 5s ease-in-out forwards
-
-.skill
   h1 
     margin: 0
     font-size: 1.25em
@@ -139,56 +22,197 @@ $circle-5_percent: $circle_num-zero - 30%
     display: flex
     flex-direction: column
     align-items: center
-  &__circle_knowledge
+  &__top
     display: flex
-    justify-content: center
-    align-items: baseline
-    .circle 
-      display: flex 
-      justify-content: center 
-      align-items: center 
-      width: 5em
-      height: 5em 
-      background-color: $white 
-      border-radius: 50% 
-      margin: 0.1875em
-      transition: 0.3s ease
-      &:hover
-        transform: scale(1.2)
-      span 
-        display: flex
-        justify-content: center
-        color: $black
-        font-size: 0.9375em
-      p 
-        display: flex
-        justify-content: center
-        font-size: 0.9375em
-        font-family: 'Roboto', sans-serif
-      &:nth-child(1)
-        width: 100px
-        height: 100px
-        background-color: $red
-      &:nth-child(3)
-        width: 90px
-        height: 90px
-        border: 10px solid $red 
-      &:nth-child(6) 
-        width: 120px
-        height: 120px
-      &:nth-child(8) 
-        width: 70px
-        height: 70px
-        border: 10px solid $white
-        background-color: $black
-      &:nth-child(9)
-        width: 130px
-        height: 130px
-      &:nth-child(10)
-        width: 75px
-        height: 75px 
-      &:nth-child(5), &:nth-child(7), &:nth-child(9)
-        background-color: $red
+    // justify-content: center
+    align-items: center
+  &__medium
+    display: flex
+    // justify-content: center
+    align-items: center
+    height: 55vh
+  &__circle_wrapper
+    position: relative
+  .circle_xd, .circle_empty-2, .circle_git, 
+  .circle_sql, .circle_grid, .circle_sass, 
+  .circle_flexbox, .circle_django, .circle_empty-3
+    position: absolute
+  .circle_empty
+    background-color: $red
+  .circle_empty-2
+    width: 4.375em
+    height: 4.375em
+    margin-top: -154px
+    margin-left: 59px
+    background-color: $red
+  .circle_photoshop
+    color: $red
+  .circle_xd
+    width: 4.6875em
+    height: 4.6875em
+    color: $black
+    margin-left: 49px
+    margin-top: -3px
+  .circle_git
+    margin-top: -62px
+    margin-left: 103px
+    background-color: $red
+  .circle_figma
+    width: 7em
+    height: 7em
+    color: $black
+    border: 10px solid $red
+  .circle_sql
+    width: 3.5em
+    height: 3.5em
+    border: 5px solid $white
+    margin-top: -57px
+    margin-left: 60px
+    background-color: $red
+  .circle_react
+    width: 5.625em
+    height: 5.625em
+    color: $black
+  .circle_grid
+    width: 4em
+    height: 4em
+    border: 8px solid $red
+    color: $black
+    margin-top: 101px
+    margin-left: 67px
+  .circle_js
+    width: 6.5625em
+    height: 6.5625em
+    background-color: $red
+  .circle_html
+    width: 7.8125em
+    height: 7.8125em
+    color: $black
+  .circle_sass
+    width: 4.375em
+    height: 4.375em
+    margin-top: -177px
+    margin-left: 101px
+    background-color: $red
+  .circle_flexbox
+    width: 4.375em
+    height: 4.375em
+    margin-top: -23px
+    margin-left: 101px
+    background-color: $red
+  .circle_webpack
+    width: 5.9375em
+    height: 5.9375em
+    background-color: $red
+  .circle_gulp
+    width: 6em
+    height: 6em
+    background-color: $black
+    color: $red
+    border: 10px solid $white
+  .circle_django
+    width: 4.6875em
+    height: 4.6875em
+    color: $red
+    margin-top: -13px
+    margin-left: 82px
+  .circle_python
+    width: 8.125em
+    height: 8.125em
+    background-color: $red
+  .circle_empty-3
+    width: 4.0625em
+    height: 4.0625em
+    background-color: $red
+    border: 5px solid $white
+    margin-top: 83px
+    margin-left: -28px
+  .circle_empty-4
+    width: 5em
+    height: 5em
+  &__circle 
+    display: flex 
+    justify-content: center 
+    align-items: center 
+    width: 5.5em
+    height: 5.5em 
+    background-color: $white 
+    border-radius: 50% 
+    margin: 0.1875em
+    transition: 0.3s ease
+    &:hover
+      transform: scale(1.2)
+    p 
+      display: flex
+      justify-content: center
+      font-size: 0.9375em
+      font-family: 'Roboto', sans-serif
+    // &:nth-child(1), &:nth-child(2), &:nth-child(6), 
+    // &:nth-child(8), &:nth-child(9), &:nth-child(12), 
+    // &:nth-child(13), &:nth-child(14), &:nth-child(17),
+    // &:nth-child(18), &:nth-child(19)
+    //   background-color: $red
+    // &:nth-child(2)
+    //   width: 4.375em
+    //   height: 4.375em
+    // &:nth-child(3)
+    //   color: $red
+    // &:nth-child(4)
+    //   width: 4.6875em
+    //   height: 4.6875em
+    //   color: $black
+    // &:nth-child(5)
+    //   color: $black
+    //   border: 10px solid $red
+    // &:nth-child(6)
+    //   width: 5.625em
+    //   height: 5.625em
+    // &:nth-child(7)
+    //   width: 5.625em
+    //   height: 5.625em
+    //   color: $black
+    // &:nth-child(8)
+    //   width: 4.375em
+    //   height: 4.375em
+    //   border: 5px solid $white
+    // &:nth-child(9)
+    //   width: 6.5625em
+    //   height: 6.5625em
+    // &:nth-child(10)
+    //   width: 5em
+    //   height: 5em
+    //   border: 8px solid $red
+    //   color: $black
+    // &:nth-child(11)
+    //   width: 7.8125em
+    //   height: 7.8125em
+    //   color: $black
+    // &:nth-child(12), &:nth-child(13)
+    //   width: 4.375em
+    //   height: 4.375em
+    // &:nth-child(14)
+    //   width: 5.9375em
+    //   height: 5.9375em
+    // &:nth-child(15)
+    //   width: 6.5625em
+    //   height: 6.5625em
+    //   background-color: $black
+    //   color: $red
+    //   border: 10px solid $white
+    // &:nth-child(16)
+    //   width: 4.6875em
+    //   height: 4.6875em
+    //   color: $red
+    // &:nth-child(17)
+    //   width: 8.125em
+    //   height: 8.125em
+    // &:nth-child(18)
+    //   width: 4.0625em
+    //   height: 4.0625em
+    //   border: 5px solid $white
+    // &:nth-child(19)
+    //   width: 5em
+    //   height: 5em
   &__certification
     display: flex
     flex-direction: column
@@ -198,7 +222,7 @@ $circle-5_percent: $circle_num-zero - 30%
     button 
       width: 16.875em
       height: 2.5em
-      background-color:#D63447
+      background-color: $red
       border-radius: 15px
       border: none
       color: white
@@ -210,201 +234,203 @@ $circle-5_percent: $circle_num-zero - 30%
         // transform: scale(1.1)
         background-color: $white
         color: $red
-  @media (max-width: $phone)
-    .skill
-      justify-content: center
-      &__ability
-        h1
-          font-size: 0.875em
-          margin-top: 0
-        h2
-          display: none
-        p 
-          font-size: 0.5em
-      &__block
-        margin: 1%
-      &__item
-        width: 3.125em
-        height: 3.125em
-      &__content
-        height: 3.125em
-        span 
-          font-size: 0.625em
-      &__content::before
-        width: 0.3125em
-      &__knowledge
-        h1 
-          font-size: 0.875em
-          margin-top: 0
-        p 
-          font-size: 0.5em
-      &__circle_knowledge
-        flex-direction: column
-        align-items: center
-        .circle
-          width: 1.875em
-          height: 1.875em
-          margin: 2px
-          p 
-            font-size: 0.5em
-          span 
-            font-size: 0.5em
-          &:nth-child(1)
-            width: 40px
-            height: 40px
-          &:nth-child(3)
-            width: 35px
-            height: 35px
-            border: 5px solid $red 
-          &:nth-child(6)
-            width: 55px
-            height: 55px
-          &:nth-child(8)
-            width: 25px
-            height: 25px
-            border: 7px solid $white
-          &:nth-child(9)
-            width: 55px
-            height: 55px
-          &:nth-child(10)
-            width: 35px
-            height: 35px     
-      &__certification
-        h1 
-        font-size: 1em
-  @media (max-width: $tablet) and (min-width: $phone)
-    .skill
-      justify-content: center
-      &__ability
-        h1
-          font-size: 1em
-          margin-bottom: 0.625em
-        h2 
-          display: none
-        p 
-          font-size: 0.5em
-      &__block
-        margin: 2%
-      &__item
-        width: 3.125em
-        height: 3.125em
-      &__content
-        height: 3.125em
-        span 
-          font-size: 0.9375em
-      &__content::before
-        width: 0.3125em
-      &__knowledge
-        h1 
-          font-size: 1em
-          margin-bottom: 0.625em
-        p 
-          // display: none
-          font-size: 0.5em
-      &__circle_knowledge
-        flex-direction: column
-        align-items: center
-        .circle
-          width: 1.875em
-          height: 1.875em
-          margin: 0.125em
-          p 
-            font-size: 0.5em
-          span 
-            font-size: 0.375em
-          &:nth-child(1)
-            width: 40px
-            height: 40px
-          &:nth-child(3)
-            width: 35px
-            height: 35px
-            border: 0.3125em solid $red 
-          &:nth-child(6)
-            width: 55px
-            height: 55px
-          &:nth-child(8)
-            width: 25px
-            height: 25px
-            border: 0.4375em solid $white
-          &:nth-child(9)
-            width: 55px
-            height: 55px
-          &:nth-child(10)
-            width: 35px
-            height: 35px     
-      &__certification
-        h1 
-          font-size: 1em
-          margin-bottom: 0.625em
-          margin-top: 0.625em
-      &__item_certification
-        button
-          width: 12.5em
-          height: 2.1875em
-          margin: 0
-  @media (max-width: $laptop) and (min-width: $tablet)
-    &__ability
-      h1
-        font-size: 1.125em
-      h2, p
-        font-size: 0.625em
-    &__block
-      margin: 2%
-    &__item
-      width: 5em
-      height: 5em
-    &__content
-      height: 5em
-      span 
-        font-size: 1.25em
-    &__content::before
-      width: 0.3125em
-    &__knowledge
-      h1 
-        font-size: 1.125em
-      p 
-        // display: none
-        font-size: 0.625em
-    &__circle_knowledge
-      align-items: center
-      .circle
-        margin: 0.125em
-        p 
-          font-size: 0.5em
-        span 
-          font-size: 0.5em
-        &:nth-child(1)
-          width: 60px
-          height: 60px
-        &:nth-child(2)
-          height: 50px
-          width: 50px
-        &:nth-child(3)
-          width: 75px
-          height: 75px
-          border: 0.4375em solid $red 
-        &:nth-child(4)
-          height: 40px
-          width: 40px
-        &:nth-child(5)
-          height: 45px
-          width: 45px
-        &:nth-child(6)
-          width: 75px
-          height: 75px
-        &:nth-child(7)
-          width: 45px
-          height: 45px
-        &:nth-child(8)
-          width: 45px
-          height: 45px
-          border: 0.5625em solid $white
-        &:nth-child(9)
-          width: 75px
-          height: 75px
-        &:nth-child(10)
-          width: 55px
-          height: 55px     
-    &__certification
-      h1 
-        font-size: 1.125em
+
+        
+  // @media (max-width: $phone)
+  //   .skill
+  //     justify-content: center
+  //     &__ability
+  //       h1
+  //         font-size: 0.875em
+  //         margin-top: 0
+  //       h2
+  //         display: none
+  //       p 
+  //         font-size: 0.5em
+  //     &__block
+  //       margin: 1%
+  //     &__item
+  //       width: 3.125em
+  //       height: 3.125em
+  //     &__content
+  //       height: 3.125em
+  //       span 
+  //         font-size: 0.625em
+  //     &__content::before
+  //       width: 0.3125em
+  //     &__knowledge
+  //       h1 
+  //         font-size: 0.875em
+  //         margin-top: 0
+  //       p 
+  //         font-size: 0.5em
+  //     &__circle_knowledge
+  //       flex-direction: column
+  //       align-items: center
+  //       .circle
+  //         width: 1.875em
+  //         height: 1.875em
+  //         margin: 2px
+  //         p 
+  //           font-size: 0.5em
+  //         span 
+  //           font-size: 0.5em
+  //         &:nth-child(1)
+  //           width: 40px
+  //           height: 40px
+  //         &:nth-child(3)
+  //           width: 35px
+  //           height: 35px
+  //           border: 5px solid $red 
+  //         &:nth-child(6)
+  //           width: 55px
+  //           height: 55px
+  //         &:nth-child(8)
+  //           width: 25px
+  //           height: 25px
+  //           border: 7px solid $white
+  //         &:nth-child(9)
+  //           width: 55px
+  //           height: 55px
+  //         &:nth-child(10)
+  //           width: 35px
+  //           height: 35px     
+  //     &__certification
+  //       h1 
+  //       font-size: 1em
+  // @media (max-width: $tablet) and (min-width: $phone)
+  //   .skill
+  //     justify-content: center
+  //     &__ability
+  //       h1
+  //         font-size: 1em
+  //         margin-bottom: 0.625em
+  //       h2 
+  //         display: none
+  //       p 
+  //         font-size: 0.5em
+  //     &__block
+  //       margin: 2%
+  //     &__item
+  //       width: 3.125em
+  //       height: 3.125em
+  //     &__content
+  //       height: 3.125em
+  //       span 
+  //         font-size: 0.9375em
+  //     &__content::before
+  //       width: 0.3125em
+  //     &__knowledge
+  //       h1 
+  //         font-size: 1em
+  //         margin-bottom: 0.625em
+  //       p 
+  //         // display: none
+  //         font-size: 0.5em
+  //     &__circle_knowledge
+  //       flex-direction: column
+  //       align-items: center
+  //       .circle
+  //         width: 1.875em
+  //         height: 1.875em
+  //         margin: 0.125em
+  //         p 
+  //           font-size: 0.5em
+  //         span 
+  //           font-size: 0.375em
+  //         &:nth-child(1)
+  //           width: 40px
+  //           height: 40px
+  //         &:nth-child(3)
+  //           width: 35px
+  //           height: 35px
+  //           border: 0.3125em solid $red 
+  //         &:nth-child(6)
+  //           width: 55px
+  //           height: 55px
+  //         &:nth-child(8)
+  //           width: 25px
+  //           height: 25px
+  //           border: 0.4375em solid $white
+  //         &:nth-child(9)
+  //           width: 55px
+  //           height: 55px
+  //         &:nth-child(10)
+  //           width: 35px
+  //           height: 35px     
+  //     &__certification
+  //       h1 
+  //         font-size: 1em
+  //         margin-bottom: 0.625em
+  //         margin-top: 0.625em
+  //     &__item_certification
+  //       button
+  //         width: 12.5em
+  //         height: 2.1875em
+  //         margin: 0
+  // @media (max-width: $laptop) and (min-width: $tablet)
+  //   &__ability
+  //     h1
+  //       font-size: 1.125em
+  //     h2, p
+  //       font-size: 0.625em
+  //   &__block
+  //     margin: 2%
+  //   &__item
+  //     width: 5em
+  //     height: 5em
+  //   &__content
+  //     height: 5em
+  //     span 
+  //       font-size: 1.25em
+  //   &__content::before
+  //     width: 0.3125em
+  //   &__knowledge
+  //     h1 
+  //       font-size: 1.125em
+  //     p 
+  //       // display: none
+  //       font-size: 0.625em
+  //   &__circle_knowledge
+  //     align-items: center
+  //     .circle
+  //       margin: 0.125em
+  //       p 
+  //         font-size: 0.5em
+  //       span 
+  //         font-size: 0.5em
+  //       &:nth-child(1)
+  //         width: 60px
+  //         height: 60px
+  //       &:nth-child(2)
+  //         height: 50px
+  //         width: 50px
+  //       &:nth-child(3)
+  //         width: 75px
+  //         height: 75px
+  //         border: 0.4375em solid $red 
+  //       &:nth-child(4)
+  //         height: 40px
+  //         width: 40px
+  //       &:nth-child(5)
+  //         height: 45px
+  //         width: 45px
+  //       &:nth-child(6)
+  //         width: 75px
+  //         height: 75px
+  //       &:nth-child(7)
+  //         width: 45px
+  //         height: 45px
+  //       &:nth-child(8)
+  //         width: 45px
+  //         height: 45px
+  //         border: 0.5625em solid $white
+  //       &:nth-child(9)
+  //         width: 75px
+  //         height: 75px
+  //       &:nth-child(10)
+  //         width: 55px
+  //         height: 55px     
+  //   &__certification
+  //     h1 
+  //       font-size: 1.125em
