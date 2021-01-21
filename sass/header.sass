@@ -33,7 +33,10 @@ header
       display: flex
       justify-content: center
     &__menu-nav
-      transition: 0.5s
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: 1s
       transform-origin: right center
       transform: scaleX(0) translateX(20%)
       opacity: 0
@@ -119,7 +122,9 @@ header
         width: 6.25em
       &__menu-nav 
         a 
-          font-size: 0.625em    
+          font-size: 0.625em 
+      &__menu-nav_active  
+        margin-right: 110px 
       &__text
         h1 
           font-size: 4em 
@@ -142,10 +147,12 @@ header
         width: 6.25em
       &__menu-nav 
         a 
-          font-size: 0.625em    
+          font-size: 0.625em  
+      &__menu-nav_active  
+        margin-right: 110px  
       &__text
         margin-left: 5.5em
-        margin-bottom: 8em
+        margin-bottom: 7em
         h1 
           font-size: 3em 
         p 
